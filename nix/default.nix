@@ -5,6 +5,7 @@ let
   core = import (coreSrc + "/nix") {
     inherit pkgs;
     namespace = "dpkg-impurifier";
+    sourceInfo = coreSrc;
   };
   architecture =
     if pkgs.stdenv.hostPlatform.isx86_64 then
@@ -46,8 +47,8 @@ let
         Architecture: ${architecture}
         Maintainer: dpkg Impurifier <root@localhost>
         Description: ${payload.description}
-        Depends: dpkg-impurifier (>= 0.1.0)${
-          lib.optionalString (payload.hostEnabled && hostDependencies != [ ]) (
+        Depends: dpkg-impurifier (>= ${core.runtimeVersion})${
+          lib.optionalString ((payload.hostEnabled || (args.hostDependencies or null) != null) && hostDependencies != [ ]) (
             ", " + lib.concatStringsSep ", " hostDependencies
           )
         }
@@ -70,39 +71,45 @@ let
     assert lib.assertMsg (
       builtins.match "[A-Za-z0-9 .,+|():<>=~-]+" nixDependency != null
     ) "invalid native Nix dependency expression";
-    pkgs.runCommand "dpkg-impurifier-0.1.0.deb" { nativeBuildInputs = [ pkgs.dpkg ]; } ''
-      mkdir -p root/DEBIAN
-      cp -r ${core.makeRuntimeTree { }}/. root/
-      chmod -R u+w root
-      cat > root/DEBIAN/control <<'CONTROL'
-      Package: dpkg-impurifier
-      Version: 0.1.0
-      Architecture: all
-      Maintainer: dpkg Impurifier <root@localhost>
-      Description: Native package intent projected into a Nix profile
-      Depends: python3, ${nixDependency}
-      CONTROL
-      cat > root/DEBIAN/triggers <<'TRIGGERS'
-      interest /usr/share/nix-profile.d
-      interest /usr/lib
-      interest /usr/lib64
-      interest /lib
-      interest /lib64
-      TRIGGERS
-      cat > root/DEBIAN/postinst <<'SCRIPT'
-      #!/bin/sh
-      set -eu
-      case "$1" in
-        configure|triggered) /usr/sbin/nix-profile-engine reconcile ;;
-      esac
-      SCRIPT
-      chmod 755 root/DEBIAN/postinst
-      echo "Installed-Size: $(du --apparent-size -sk root | cut -f1)" >> root/DEBIAN/control
-      dpkg-deb --root-owner-group --build root "$out"
-    '';
+    pkgs.runCommand "dpkg-impurifier-${core.runtimeVersion}.deb" { nativeBuildInputs = [ pkgs.dpkg ]; }
+      ''
+        mkdir -p root/DEBIAN
+        cp -r ${core.makeRuntimeTree { }}/. root/
+        chmod -R u+w root
+        cat > root/DEBIAN/control <<'CONTROL'
+        Package: dpkg-impurifier
+        Version: ${core.runtimeVersion}
+        Architecture: all
+        Maintainer: dpkg Impurifier <root@localhost>
+        Description: Native package intent projected into a Nix profile
+        Depends: python3, ${nixDependency}
+        CONTROL
+        cat > root/DEBIAN/triggers <<'TRIGGERS'
+        interest /usr/share/nix-profile.d
+        interest /usr/lib
+        interest /usr/lib64
+        interest /lib
+        interest /lib64
+        TRIGGERS
+        cat > root/DEBIAN/postinst <<'SCRIPT'
+        #!/bin/sh
+        set -eu
+        case "$1" in
+          configure|triggered) /usr/sbin/nix-profile-engine reconcile ;;
+        esac
+        SCRIPT
+        chmod 755 root/DEBIAN/postinst
+        echo "Installed-Size: $(du --apparent-size -sk root | cut -f1)" >> root/DEBIAN/control
+        dpkg-deb --root-owner-group --build root "$out"
+      '';
 in
 {
-  inherit (core) engine offlineCache unit;
+  inherit (core)
+    engine
+    offlineCache
+    unit
+    runtimeVersion
+    ;
   inherit makeDeb makeRuntimeDeb;
   runtimeDeb = makeRuntimeDeb { };
   makePackage = args: {

@@ -116,6 +116,11 @@ let
     '';
   hardwareDeb = impurifier.makeOfflineDeb {
     pkg = hardwareFixture.tool;
+    hostDependencies = [
+      "systemd"
+      "init-system-helpers"
+      "impurifier-host-driver"
+    ];
     systemd.unit = pkgs.writeText "hardware-tool.service" ''
       [Service]
       Type=exec
@@ -127,6 +132,19 @@ let
   };
   # Model a preinstalled Nix/Python runtime in dpkg's database. The VM provides
   # the actual executables; this package installs no replacements for them.
+  # Deliberately incompatible native inventory entry: dependency resolution,
+  # rather than its payload, must prevent configuring a new application.
+  legacyRuntime = pkgs.runCommand "legacy-runtime.deb" { nativeBuildInputs = [ pkgs.dpkg ]; } ''
+    mkdir -p root/DEBIAN
+    cat > root/DEBIAN/control <<'CONTROL'
+    Package: dpkg-impurifier
+    Version: 0.1.0
+    Architecture: all
+    Maintainer: VM <root@localhost>
+    Description: Legacy runtime version marker for dependency testing
+    CONTROL
+    dpkg-deb --root-owner-group --build root "$out"
+  '';
   runtimeProvider = pkgs.runCommand "vm-runtime.deb" { nativeBuildInputs = [ pkgs.dpkg ]; } ''
     mkdir -p root/DEBIAN
     cat > root/DEBIAN/control <<'CONTROL'
@@ -185,7 +203,12 @@ pkgs.testers.runNixOSTest {
     # Expose a native-style mutable unit directory for package enable/disable.
     machine.succeed("cp -rL /etc/systemd/system /tmp/systemd-system; chmod -R u+w /tmp/systemd-system; rm /etc/systemd/system; mv /tmp/systemd-system /etc/systemd/system; systemctl daemon-reload")
     machine.succeed("mkdir -p /var/lib/dpkg/updates /var/lib/dpkg/info; touch /var/lib/dpkg/status")
-    machine.succeed("dpkg -i ${runtimeProvider} ${impurifier.runtimeDeb}")
+    machine.succeed("dpkg -i ${runtimeProvider} ${legacyRuntime}")
+    with subtest("native dependency constraints reject a legacy runtime"):
+        output = machine.execute("dpkg -i ${offline} 2>&1")[1]
+        assert "dependency problems prevent configuration" in output, output
+        machine.succeed("dpkg -r projected-tool-offline")
+        machine.succeed("dpkg -i ${impurifier.runtimeDeb}")
     machine.succeed("mkdir -p /tmp/packages")
     # Copy artifacts off the shared read-only store so destructive checks do not
     # accidentally keep application outputs alive through the test inputs.
@@ -295,7 +318,9 @@ pkgs.testers.runNixOSTest {
         machine.fail("test -L /etc/systemd/system/multi-user.target.wants/service-demo.service")
         machine.succeed("id service-demo; test -d /var/lib/service-demo")
     with subtest("native driver upgrades refresh immutable hardware snapshots"):
-        machine.succeed("dpkg -i /tmp/packages/driver1.deb /tmp/packages/hardware.deb")
+        code, output = machine.execute("dpkg -i /tmp/packages/hardware.deb 2>&1")
+        assert code != 0 and "impurifier-host-driver" in output, output
+        machine.succeed("dpkg --unpack /tmp/packages/driver1.deb /tmp/packages/hardware.deb; dpkg --configure --pending")
         machine.succeed("test $(/opt/nix/profile/bin/hardware-tool) = 1")
         machine.wait_until_succeeds("grep '^1$' /run/hardware-driver-version")
         before = machine.succeed("readlink /opt/nix/profile").strip()
