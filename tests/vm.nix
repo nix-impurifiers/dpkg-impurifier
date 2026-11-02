@@ -1,5 +1,9 @@
 # SPDX-License-Identifier: MIT
-{ pkgs, impurifier }:
+{
+  pkgs,
+  impurifier,
+  hardwareFixture,
+}:
 let
   # Tiny closure for destructive GC tests: must not appear in the VM's system closure.
   tool =
@@ -96,6 +100,31 @@ let
         WantedBy=multi-user.target
       '';
     };
+  hostDriver =
+    version:
+    pkgs.runCommand "host-driver-${version}.deb" { nativeBuildInputs = [ pkgs.dpkg ]; } ''
+      mkdir -p root/DEBIAN
+      cp -r ${hardwareFixture.driver version}/. root/
+      cat > root/DEBIAN/control <<'CONTROL'
+      Package: impurifier-host-driver
+      Version: ${version}
+      Architecture: amd64
+      Maintainer: VM <root@localhost>
+      Description: Native driver ABI fixture
+      CONTROL
+      dpkg-deb --root-owner-group --build root "$out"
+    '';
+  hardwareDeb = impurifier.makeOfflineDeb {
+    pkg = hardwareFixture.tool;
+    systemd.unit = pkgs.writeText "hardware-tool.service" ''
+      [Service]
+      Type=exec
+      ExecStart=/opt/nix/profile/bin/hardware-tool --serve
+      [Install]
+      WantedBy=multi-user.target
+    '';
+    inherit (hardwareFixture) hardware;
+  };
   # Model a preinstalled Nix/Python runtime in dpkg's database. The VM provides
   # the actual executables; this package installs no replacements for them.
   runtimeProvider = pkgs.runCommand "vm-runtime.deb" { nativeBuildInputs = [ pkgs.dpkg ]; } ''
@@ -163,6 +192,7 @@ pkgs.testers.runNixOSTest {
     machine.succeed("cp ${net1} /tmp/packages/v1.deb; cp ${net2} /tmp/packages/v2.deb; cp ${offline} /tmp/packages/offline.deb; cp ${other} /tmp/packages/hello.deb; cp ${offline2} /tmp/packages/offline2.deb; cp ${daemonDeb "1"} /tmp/packages/daemon1.deb; cp ${daemonDeb "2"} /tmp/packages/daemon2.deb; cp ${daemonDebWith "2" "second"} /tmp/packages/daemon-unit2.deb; cp ${daemonDebWith "2" "broken"} /tmp/packages/daemon-broken.deb; cp ${partialService "partial-a" false} /tmp/packages/partial-a.deb; cp ${partialService "partial-b" true} /tmp/packages/partial-b.deb")
     paths = json.loads(machine.succeed("cat /etc/impurifier-fixtures.json"))
     engine = "/usr/sbin/nix-profile-engine"
+    machine.succeed("cp ${hostDriver "1"} /tmp/packages/driver1.deb; cp ${hostDriver "2"} /tmp/packages/driver2.deb; cp ${hardwareDeb} /tmp/packages/hardware.deb")
     with subtest("failed substitution preserves active generation and is retryable"):
         before = machine.succeed("readlink /opt/nix/profile").strip()
         machine.fail("dpkg -i /tmp/packages/v1.deb")
@@ -264,6 +294,26 @@ pkgs.testers.runNixOSTest {
         machine.fail("systemctl is-active --quiet service-demo.service")
         machine.fail("test -L /etc/systemd/system/multi-user.target.wants/service-demo.service")
         machine.succeed("id service-demo; test -d /var/lib/service-demo")
+    with subtest("native driver upgrades refresh immutable hardware snapshots"):
+        machine.succeed("dpkg -i /tmp/packages/driver1.deb /tmp/packages/hardware.deb")
+        machine.succeed("test $(/opt/nix/profile/bin/hardware-tool) = 1")
+        machine.wait_until_succeeds("grep '^1$' /run/hardware-driver-version")
+        before = machine.succeed("readlink /opt/nix/profile").strip()
+        machine.succeed("dpkg -i /tmp/packages/driver2.deb")
+        assert machine.succeed("readlink /opt/nix/profile").strip() != before
+        machine.succeed("test $(/opt/nix/profile/bin/hardware-tool) = 2")
+        machine.wait_until_succeeds("grep '^2$' /run/hardware-driver-version")
+        machine.succeed("test $(" + before + "/bin/hardware-tool) = 1")
+        with subtest("missing native library cannot invalidate the published snapshot"):
+            before = machine.succeed("readlink /opt/nix/profile").strip()
+            machine.succeed("mv /usr/lib/libimpurifier-driver.so.1 /usr/lib/driver.saved")
+            machine.fail("/usr/sbin/nix-profile-engine reconcile")
+            assert machine.succeed("readlink /opt/nix/profile").strip() == before
+            machine.succeed("test $(/opt/nix/profile/bin/hardware-tool) = 2")
+            machine.succeed("mv /usr/lib/driver.saved /usr/lib/libimpurifier-driver.so.1")
+        machine.succeed("/usr/sbin/nix-profile-engine prune --keep 0; nix-store --gc; test $(/opt/nix/profile/bin/hardware-tool) = 2")
+        machine.succeed("dpkg -r hardware-tool-offline impurifier-host-driver")
+        machine.fail("test -e /opt/nix/profile/bin/hardware-tool")
     with subtest("removal cleans up services started before another service failed"):
         machine.fail("dpkg -i /tmp/packages/partial-a.deb /tmp/packages/partial-b.deb")
         machine.succeed("systemctl is-active --quiet partial-a.service")

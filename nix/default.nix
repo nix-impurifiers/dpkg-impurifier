@@ -82,7 +82,13 @@ let
       Description: Native package intent projected into a Nix profile
       Depends: python3, ${nixDependency}
       CONTROL
-      echo 'interest /usr/share/nix-profile.d' > root/DEBIAN/triggers
+      cat > root/DEBIAN/triggers <<'TRIGGERS'
+      interest /usr/share/nix-profile.d
+      interest /usr/lib
+      interest /usr/lib64
+      interest /lib
+      interest /lib64
+      TRIGGERS
       cat > root/DEBIAN/postinst <<'SCRIPT'
       #!/bin/sh
       set -eu

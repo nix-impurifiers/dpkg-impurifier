@@ -27,6 +27,9 @@
         hello-offline-deb = impurifier.makeOfflineDeb { pkg = pkgs.hello; };
       };
       formatter = pkgs.nixfmt-tree;
-      checks = import ../../../tests { inherit pkgs impurifier; };
+      checks = import ../../../tests {
+        inherit pkgs impurifier;
+        coreSrc = inputs.impurifier;
+      };
     };
 }

@@ -62,14 +62,7 @@ pinned `nix-impurifiers/impurifier` source dependency; no maintained engine is
 copied between backends. RPM uses the same core with its own native emitter and
 transaction-file-trigger tests.
 
-The hardware membrane needs an independently tested runtime design. A flake
-registry pin cannot change an already-built binary's runpath. A single copied
-`libcuda.so` is not a driver dependency closure, and a host kernel/userspace
-update cannot guarantee uninterrupted GPU jobs. Do not edit immutable store
-binaries on the target. Evaluate explicit runtime wrappers or an existing
-host-driver bridge against real driver dependency graphs, version mismatches,
-and recovery tests before adding reactive hooks. GPU hardware tests complement,
-rather than get replaced by, fake-library VM tests.
+The hardware membrane uses explicitly selected ELF files captured into rooted, immutable Nix-store directories. Selected commands receive runtime wrappers; native library-directory triggers refresh snapshots after upgrades. A real native driver-package VM fixture verifies changed and old generations, failed capture, managed service restart and GC. This is not automatic GPU stack discovery or an ABI guarantee. Consumers must select compatible native libraries and dependencies; real-device compatibility remains separate evidence.
 
 OpenRC is implemented in the shared core and exercised by the APK backend in an Alpine userspace VM. Install/upgrade lifecycle hooks now run through shared activation with retry semantics. Runtime installation shims, additional
 architectures, native repository publishing, driver hooks, and full bare-host
