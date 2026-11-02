@@ -1,4 +1,4 @@
-# SPDX-License-Identifier: GPL-3.0-or-later
+# SPDX-License-Identifier: MIT
 { pkgs, impurifier }:
 let
   # Tiny closure for destructive GC tests: must not appear in the VM's system closure.

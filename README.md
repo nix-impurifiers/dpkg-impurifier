@@ -148,6 +148,6 @@ See [testing](docs/development/testing.md) and
 [design decisions and deferred work](docs/design.md). The broader
 [targets inventory](docs/targets.md) tracks other package-manager and recipe targets.
 
-GPL-3.0-or-later.
+MIT.
 
 Lifecycle hooks `lifecycle.onInstall` and `lifecycle.onUpgrade` accept shell bodies. They run as root after accounts/directories exist and the new profile is published, before service activation. Use `/opt/nix/profile/bin/<tool>` for projected commands and declare native dependencies for other commands. Install hooks run until the application's first successful activation; upgrade hooks run when its output, version or hook revision changes, including native downgrades. A failed hook leaves activation pending and may be retried, so hooks must be idempotent. They do not provide database rollback or exactly-once execution. Flavor-only changes to the same application do not rerun completed hooks.
