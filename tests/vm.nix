@@ -59,6 +59,17 @@ let
         owner = "service-demo:service-demo";
         mode = "0750";
       };
+      lifecycle = {
+        onInstall = ''
+          /usr/bin/python3 -c "import pwd; pwd.getpwnam('service-demo')"
+          test -x /opt/nix/profile/bin/service-demo
+          echo installed > /var/lib/service-demo/initialized
+        '';
+        onUpgrade = ''
+          test ! -e /run/fail-service-migration
+          echo ${version} > /var/lib/service-demo/migrated
+        '';
+      };
       systemd.unit = pkgs.writeText "service-demo.service" ''
         [Unit]
         Description=Impurifier VM fixture
@@ -72,17 +83,19 @@ let
       '';
     };
   daemonDeb = version: daemonDebWith version "first";
-  partialService = name: broken: impurifier.makeOfflineDeb {
-    pkg = daemon "1";
-    inherit name;
-    systemd.unit = pkgs.writeText "${name}.service" ''
-      [Service]
-      Type=exec
-      ExecStart=/opt/nix/profile/bin/${if broken then "missing-daemon" else "service-demo"}
-      [Install]
-      WantedBy=multi-user.target
-    '';
-  };
+  partialService =
+    name: broken:
+    impurifier.makeOfflineDeb {
+      pkg = daemon "1";
+      inherit name;
+      systemd.unit = pkgs.writeText "${name}.service" ''
+        [Service]
+        Type=exec
+        ExecStart=/opt/nix/profile/bin/${if broken then "missing-daemon" else "service-demo"}
+        [Install]
+        WantedBy=multi-user.target
+      '';
+    };
   # Model a preinstalled Nix/Python runtime in dpkg's database. The VM provides
   # the actual executables; this package installs no replacements for them.
   runtimeProvider = pkgs.runCommand "vm-runtime.deb" { nativeBuildInputs = [ pkgs.dpkg ]; } ''
@@ -222,6 +235,13 @@ pkgs.testers.runNixOSTest {
         machine.wait_for_unit("service-demo.service")
         machine.wait_until_succeeds("grep '^1$' /var/lib/service-demo/version")
         machine.succeed("id service-demo; test $(stat -c %a /var/lib/service-demo) = 750; test $(stat -c %U /var/lib/service-demo) = service-demo")
+    with subtest("failed lifecycle migration preserves retry intent before restarting services"):
+        machine.succeed("grep installed /var/lib/service-demo/initialized; touch /run/fail-service-migration")
+        machine.fail("dpkg -i /tmp/packages/daemon2.deb")
+        machine.succeed("grep '^1$' /var/lib/service-demo/version; rm /run/fail-service-migration")
+        machine.succeed("dpkg --configure --pending")
+        machine.wait_until_succeeds("grep '^2$' /var/lib/service-demo/version")
+        machine.succeed("grep '^2$' /var/lib/service-demo/migrated")
     with subtest("upgrade restarts running service on the new binary"):
         machine.succeed("dpkg -i /tmp/packages/daemon2.deb")
         machine.wait_until_succeeds("grep '^2$' /var/lib/service-demo/version")
