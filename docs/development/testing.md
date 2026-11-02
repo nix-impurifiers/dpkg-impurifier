@@ -48,3 +48,5 @@ The engine/payload/cache implementation is now in the pinned `impurifier` source
 input. Changing that dependency is gated by both VM suites, including the
 service-restart recovery regression. The backend preserves its original state
 and cache namespace when invoking the shared engine.
+
+Lifecycle migrations and native host-library upgrades are checked in backend VMs. Hardware fixtures use a real ELF loader and versioned native driver packages; dpkg additionally checks service restart, immutable old generations, missing-library failure and snapshot GC roots. Real GPU compatibility requires separate device testing.
