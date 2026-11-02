@@ -15,9 +15,9 @@ supply runtime packages whose dependency names/behavior consumers choose.
 | Backend | Coverage to investigate | Status |
 | --- | --- | --- |
 | dpkg-impurifier | DEB/dpkg, with apt transactions | Implemented; unit/emitter checks and two VM suites |
-| rpm-impurifier | RPM; dnf, zypper and other RPM frontends | Planned; frontend behavior needs explicit tests |
-| pacman-impurifier | ALPM packages and hooks | Planned |
-| apk-impurifier | APK metadata and triggers | Planned |
+| rpm-impurifier | RPM; dnf, zypper and other RPM frontends | Implemented with RPM/systemd VM coverage; dnf/zypper frontend behavior needs explicit tests |
+| pacman-impurifier | ALPM packages and hooks | Implemented with pacman/systemd VM coverage |
+| apk-impurifier | APK metadata and triggers | Implemented with Alpine APK/OpenRC VM coverage |
 | portage-impurifier | Ebuild/eclass overlay, native binpkgs | Candidate; emerge batching is an open design question |
 | opkg-impurifier | IPK/opkg | Candidate; distinct from APK/apk |
 | xbps-impurifier | XBPS artifacts and lifecycle | Candidate |

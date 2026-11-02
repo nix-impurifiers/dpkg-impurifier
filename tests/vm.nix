@@ -72,6 +72,17 @@ let
       '';
     };
   daemonDeb = version: daemonDebWith version "first";
+  partialService = name: broken: impurifier.makeOfflineDeb {
+    pkg = daemon "1";
+    inherit name;
+    systemd.unit = pkgs.writeText "${name}.service" ''
+      [Service]
+      Type=exec
+      ExecStart=/opt/nix/profile/bin/${if broken then "missing-daemon" else "service-demo"}
+      [Install]
+      WantedBy=multi-user.target
+    '';
+  };
   # Model a preinstalled Nix/Python runtime in dpkg's database. The VM provides
   # the actual executables; this package installs no replacements for them.
   runtimeProvider = pkgs.runCommand "vm-runtime.deb" { nativeBuildInputs = [ pkgs.dpkg ]; } ''
@@ -136,7 +147,7 @@ pkgs.testers.runNixOSTest {
     machine.succeed("mkdir -p /tmp/packages")
     # Copy artifacts off the shared read-only store so destructive checks do not
     # accidentally keep application outputs alive through the test inputs.
-    machine.succeed("cp ${net1} /tmp/packages/v1.deb; cp ${net2} /tmp/packages/v2.deb; cp ${offline} /tmp/packages/offline.deb; cp ${other} /tmp/packages/hello.deb; cp ${offline2} /tmp/packages/offline2.deb; cp ${daemonDeb "1"} /tmp/packages/daemon1.deb; cp ${daemonDeb "2"} /tmp/packages/daemon2.deb; cp ${daemonDebWith "2" "second"} /tmp/packages/daemon-unit2.deb; cp ${daemonDebWith "2" "broken"} /tmp/packages/daemon-broken.deb")
+    machine.succeed("cp ${net1} /tmp/packages/v1.deb; cp ${net2} /tmp/packages/v2.deb; cp ${offline} /tmp/packages/offline.deb; cp ${other} /tmp/packages/hello.deb; cp ${offline2} /tmp/packages/offline2.deb; cp ${daemonDeb "1"} /tmp/packages/daemon1.deb; cp ${daemonDeb "2"} /tmp/packages/daemon2.deb; cp ${daemonDebWith "2" "second"} /tmp/packages/daemon-unit2.deb; cp ${daemonDebWith "2" "broken"} /tmp/packages/daemon-broken.deb; cp ${partialService "partial-a" false} /tmp/packages/partial-a.deb; cp ${partialService "partial-b" true} /tmp/packages/partial-b.deb")
     paths = json.loads(machine.succeed("cat /etc/impurifier-fixtures.json"))
     engine = "/usr/sbin/nix-profile-engine"
     with subtest("failed substitution preserves active generation and is retryable"):
@@ -233,6 +244,12 @@ pkgs.testers.runNixOSTest {
         machine.fail("systemctl is-active --quiet service-demo.service")
         machine.fail("test -L /etc/systemd/system/multi-user.target.wants/service-demo.service")
         machine.succeed("id service-demo; test -d /var/lib/service-demo")
+    with subtest("removal cleans up services started before another service failed"):
+        machine.fail("dpkg -i /tmp/packages/partial-a.deb /tmp/packages/partial-b.deb")
+        machine.succeed("systemctl is-active --quiet partial-a.service")
+        machine.succeed("dpkg -r partial-a-offline partial-b-offline; dpkg --configure --pending")
+        machine.fail("systemctl is-active --quiet partial-a.service")
+        machine.fail("test -L /etc/systemd/system/multi-user.target.wants/partial-a.service")
     with subtest("removal updates profile, retains config; purge removes config"):
         machine.succeed("dpkg -r projected-tool-net hello-net")
         machine.fail("test -e /opt/nix/profile/bin/projected-tool")

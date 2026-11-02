@@ -71,7 +71,7 @@ host-driver bridge against real driver dependency graphs, version mismatches,
 and recovery tests before adding reactive hooks. GPU hardware tests complement,
 rather than get replaced by, fake-library VM tests.
 
-Arbitrary lifecycle scripts, OpenRC, runtime installation shims, additional
+OpenRC is implemented in the shared core and exercised by the APK backend in an Alpine userspace VM. Arbitrary lifecycle scripts, runtime installation shims, additional
 architectures, native repository publishing, driver hooks, and full bare-host
 bootstrap are not implemented by this first backend.
 
