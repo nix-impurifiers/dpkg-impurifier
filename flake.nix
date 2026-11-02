@@ -3,6 +3,10 @@
   description = "Native distro packages backed by transactional Nix profiles";
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
+    impurifier = {
+      url = "github:nix-impurifiers/impurifier";
+      flake = false;
+    };
     caisson.url = "github:nix-caisson/caisson";
     flake-parts.url = "github:hercules-ci/flake-parts";
     flake-parts.inputs.nixpkgs-lib.follows = "nixpkgs";

@@ -3,7 +3,7 @@
 Emit native `.deb` packages whose applications live in a Nix store closure.
 `dpkg` owns install intent, configuration files, users, directories and service
 units. One transaction trigger reconciles the installed descriptors into
-`/opt/nix/profile`. Intended repository: `nix-impurifiers/dpkg-impurifier`.
+`/opt/nix/profile`. Repository: [nix-impurifiers/dpkg-impurifier](https://github.com/nix-impurifiers/dpkg-impurifier).
 
 This impurifier targets **dpkg**, not a particular distribution. Debian and
 Ubuntu can use the same artifacts when their runtime dependencies are met.
@@ -23,7 +23,10 @@ it requires a separate installer/bootstrap implementation and tests.
 
 ## Package a Nix application
 
-The library takes the consumer's package set rather than choosing one for them:
+The backend uses the pinned [shared impurifier core](https://github.com/nix-impurifiers/impurifier)
+for its engine, payloads and closure caches. It retains its existing descriptor,
+state and cache paths. The library takes the consumer's package set rather than
+choosing one for them:
 
 ```nix
 let

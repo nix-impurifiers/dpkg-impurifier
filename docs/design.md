@@ -57,9 +57,10 @@ upgrades and removal, and work offline. It needs pristine-host VM tests of its
 own. It must not be disguised as an already-working dependency shim.
 
 The other package-manager backends need their own format emitters and real
-package-manager VM tests. Extract the common engine/descriptor/closure-cache
-parts into a shared dependency when the next backend establishes that boundary;
-do not copy maintained engines between repositories.
+package-manager VM tests. The common engine, payload compiler and closure cache are now supplied by the
+pinned `nix-impurifiers/impurifier` source dependency; no maintained engine is
+copied between backends. RPM uses the same core with its own native emitter and
+transaction-file-trigger tests.
 
 The hardware membrane needs an independently tested runtime design. A flake
 registry pin cannot change an already-built binary's runpath. A single copied

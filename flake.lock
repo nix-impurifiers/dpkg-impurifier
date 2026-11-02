@@ -75,6 +75,22 @@
         "type": "github"
       }
     },
+    "impurifier": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1793602033,
+        "narHash": "sha256-MF9Hus8ZeqNnqj/5PKR+pOF5qPUa8zQiGO5JWgHysHQ=",
+        "owner": "nix-impurifiers",
+        "repo": "impurifier",
+        "rev": "7a61c0549f442cd74194089d6781ddb1519b4700",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nix-impurifiers",
+        "repo": "impurifier",
+        "type": "github"
+      }
+    },
     "nixpkgs": {
       "locked": {
         "lastModified": 1792210252,
@@ -110,6 +126,7 @@
       "inputs": {
         "caisson": "caisson",
         "flake-parts": "flake-parts_2",
+        "impurifier": "impurifier",
         "nixpkgs": "nixpkgs"
       }
     }

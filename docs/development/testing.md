@@ -2,7 +2,7 @@
 
 Run `nix flake check -L`. All checks are under `checks.x86_64-linux`.
 
-* `unit`: descriptor schema, leaf/file-directory collisions, priorities,
+* `unit`: shared-core contracts for descriptor schema, leaf/file-directory collisions, priorities,
   symlink cycles, and safe pruning.
 * `emitter`: invalid author declarations, custom native Nix dependency
   expressions, versioned virtual Provides, and absence of application closure
@@ -43,3 +43,8 @@ ch-zsh-config at `138f31451af4896f3a6259af397db990fb2fb9a7` with VM-specific
 prose/timeouts and cache uploads disabled. They require no cache upload secrets.
 They run the flake checks, including both QEMU suites. Local validation does not
 claim a GitHub Actions run: the new repository has not been published yet.
+
+The engine/payload/cache implementation is now in the pinned `impurifier` source
+input. Changing that dependency is gated by both VM suites, including the
+service-restart recovery regression. The backend preserves its original state
+and cache namespace when invoking the shared engine.

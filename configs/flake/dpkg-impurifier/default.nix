@@ -1,12 +1,22 @@
 # SPDX-License-Identifier: GPL-3.0-or-later
 { ... }:
-{ lib, ... }:
+{ lib, inputs, ... }:
 {
-  flake.lib = lib.mkForce { dpkg-impurifier = { pkgs }: import ../../../nix { inherit pkgs; }; };
+  flake.lib = lib.mkForce {
+    dpkg-impurifier =
+      { pkgs }:
+      import ../../../nix {
+        inherit pkgs;
+        coreSrc = inputs.impurifier;
+      };
+  };
   perSystem =
     { pkgs, ... }:
     let
-      impurifier = import ../../../nix { inherit pkgs; };
+      impurifier = import ../../../nix {
+        inherit pkgs;
+        coreSrc = inputs.impurifier;
+      };
     in
     {
       packages = {
