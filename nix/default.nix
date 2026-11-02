@@ -1,11 +1,20 @@
 # SPDX-License-Identifier: MIT
-{ pkgs, coreSrc }:
+{
+  pkgs,
+  coreSrc,
+  sourceInfo ? { },
+}:
 let
   inherit (pkgs) lib;
   core = import (coreSrc + "/nix") {
     inherit pkgs;
     namespace = "dpkg-impurifier";
-    sourceInfo = coreSrc;
+    sourceInfo = {
+      # Native updates must include adapter-only releases, not just engine pins.
+      lastModified = pkgs.lib.max (if builtins.isAttrs coreSrc then coreSrc.lastModified or 0 else 0) (
+        if builtins.isAttrs sourceInfo then sourceInfo.lastModified or 0 else 0
+      );
+    };
   };
   architecture =
     if pkgs.stdenv.hostPlatform.isx86_64 then
@@ -48,9 +57,9 @@ let
         Maintainer: dpkg Impurifier <root@localhost>
         Description: ${payload.description}
         Depends: dpkg-impurifier (>= ${core.runtimeVersion})${
-          lib.optionalString ((payload.hostEnabled || (args.hostDependencies or null) != null) && hostDependencies != [ ]) (
-            ", " + lib.concatStringsSep ", " hostDependencies
-          )
+          lib.optionalString (
+            (payload.hostEnabled || (args.hostDependencies or null) != null) && hostDependencies != [ ]
+          ) (", " + lib.concatStringsSep ", " hostDependencies)
         }
         Provides: ${payload.name} (= ${payload.version})
         Conflicts: ${payload.name}-${if payload.offline then "net" else "offline"}
