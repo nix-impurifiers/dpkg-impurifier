@@ -167,3 +167,17 @@ The engine captures explicitly selected ELF files into an immutable Nix-store di
 Consumers select compatible libraries, their non-Nix dependencies, paths and native package dependencies. This does not discover a GPU stack, validate its ABI, rebind already-running processes, or roll back kernel modules. GPU user/kernel compatibility and real-device behavior need hardware tests. Sources outside `/usr/lib`, `/usr/lib64`, `/lib` and `/lib64` need explicit reconciliation after updates. This is a bounded runtime bridge, not automatic GPU compatibility.
 
 The exported `runtimeVersion` follows the pinned core source timestamp. Application dependencies require that runtime version or newer, rather than accepting every engine as `0.1.0`. This supports ordinary native engine upgrades without project release tags. Consumer-provided Nix dependency expressions remain independent of the engine's own native version.
+
+The native frontend matrix covers Debian APT/apt-get, Aptitude, Nala, GDebi and
+Synaptic. A producer VM installs their real snapshot packages and dependencies
+offline. Consumers use signed APT repository metadata, reject tampering while
+retaining the trusted index, verify unchanged package payloads, launch as an
+ordinary user, upgrade/preserve edited configuration, purge and verify GC.
+Synaptic uses its real configuration dialog under Xvfb; the test activates Keep.
+GDebi is tested as an installer, with native apt handling removal.
+See [fixture provenance and boundaries](docs/development/debian-frontends.md).
+
+Final removal of the runtime reconciles and prunes before its executable and
+native Nix/Python dependencies disappear. This also covers solvers which remove
+the runtime automatically with the last application. Ordinary runtime upgrades
+retain the normal generation policy.

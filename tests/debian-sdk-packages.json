@@ -1,0 +1,1666 @@
+[
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/s/systemd/libsystemd-shared_257.13-1%7edeb13u1_amd64.deb",
+    "name": "libsystemd-shared_257.13-1~deb13u1_amd64.deb",
+    "hash": "sha256-LTSYJOV/iFB+KjM2BhDYr8FDpK1egO5L+PN7gm1vN/k=",
+    "package": "libsystemd-shared",
+    "version": "257.13-1~deb13u1",
+    "size": 2154616
+  },
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/a/apparmor/libapparmor1_4.1.0-1_amd64.deb",
+    "name": "libapparmor1_4.1.0-1_amd64.deb",
+    "hash": "sha256-QViXbHcDi5MCGWf0JbTMUF3xjE9eP0RHMjmeftSvRBk=",
+    "package": "libapparmor1",
+    "version": "4.1.0-1",
+    "size": 43688
+  },
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/s/systemd/systemd_257.13-1%7edeb13u1_amd64.deb",
+    "name": "systemd_257.13-1~deb13u1_amd64.deb",
+    "hash": "sha256-7oEwKh1bdDR2K254SlcoVNS2z2I14z4tEErU4crnGrQ=",
+    "package": "systemd",
+    "version": "257.13-1~deb13u1",
+    "size": 3093632
+  },
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/s/systemd/systemd-sysv_257.13-1%7edeb13u1_amd64.deb",
+    "name": "systemd-sysv_257.13-1~deb13u1_amd64.deb",
+    "hash": "sha256-O+1IBCtuQPijxDnnm0pO1qEhAus6tmEj3EOqGPBBZyk=",
+    "package": "systemd-sysv",
+    "version": "257.13-1~deb13u1",
+    "size": 64876
+  },
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/d/dbus/libdbus-1-3_1.16.2-2_amd64.deb",
+    "name": "libdbus-1-3_1.16.2-2_amd64.deb",
+    "hash": "sha256-u8txHa/34QS1+A+bBUdbYUJnS/5lUYo2pW6WqRBoo/U=",
+    "package": "libdbus-1-3",
+    "version": "1.16.2-2",
+    "size": 177904
+  },
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/d/dbus/dbus-bin_1.16.2-2_amd64.deb",
+    "name": "dbus-bin_1.16.2-2_amd64.deb",
+    "hash": "sha256-p8B4X4nTdju4PikSI3E1p9HGEOBvSHw5sdZAjojUb7U=",
+    "package": "dbus-bin",
+    "version": "1.16.2-2",
+    "size": 80004
+  },
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/d/dbus/dbus-session-bus-common_1.16.2-2_all.deb",
+    "name": "dbus-session-bus-common_1.16.2-2_all.deb",
+    "hash": "sha256-mL0ng2xxcIOe2chLANqtntcVW9PULj8Ow/r0l6r6X18=",
+    "package": "dbus-session-bus-common",
+    "version": "1.16.2-2",
+    "size": 52264
+  },
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/e/expat/libexpat1_2.8.3-1%7edeb13u1_amd64.deb",
+    "name": "libexpat1_2.8.3-1~deb13u1_amd64.deb",
+    "hash": "sha256-OKvg5xCgdojpwUnXRTbmfP7gNkvbZN1tZEwyoc+tOJ8=",
+    "package": "libexpat1",
+    "version": "2.8.3-1~deb13u1",
+    "size": 122672
+  },
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/d/dbus/dbus-daemon_1.16.2-2_amd64.deb",
+    "name": "dbus-daemon_1.16.2-2_amd64.deb",
+    "hash": "sha256-yRVYy9AZvV7D6f3gCEl21fYZd/TvCp7R/0j+OhKbkdQ=",
+    "package": "dbus-daemon",
+    "version": "1.16.2-2",
+    "size": 158660
+  },
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/a/adduser/adduser_3.152_all.deb",
+    "name": "adduser_3.152_all.deb",
+    "hash": "sha256-5QmE0uHvYwDj/VEwODmEIYmgd7EMtcrf8ZI98QxhxJM=",
+    "package": "adduser",
+    "version": "3.152",
+    "size": 190932
+  },
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/d/dbus/dbus-system-bus-common_1.16.2-2_all.deb",
+    "name": "dbus-system-bus-common_1.16.2-2_all.deb",
+    "hash": "sha256-Ji6eyKrk44v6NBZI+UmLKSgKgUWGAeHCZaNqJHcdEgo=",
+    "package": "dbus-system-bus-common",
+    "version": "1.16.2-2",
+    "size": 53540
+  },
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/d/dbus/dbus_1.16.2-2_amd64.deb",
+    "name": "dbus_1.16.2-2_amd64.deb",
+    "hash": "sha256-9cR2OWFDJNrJpMC69QgWdvaY+BXdhGBglSsdLm5Q8nQ=",
+    "package": "dbus",
+    "version": "1.16.2-2",
+    "size": 71632
+  },
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/p/python3.13/libpython3.13-minimal_3.13.5-2%2bdeb13u5_amd64.deb",
+    "name": "libpython3.13-minimal_3.13.5-2+deb13u5_amd64.deb",
+    "hash": "sha256-pKpqmox3+Hv+VF4dFOxCwAHRiazpDjqnXe7IgrOd7kk=",
+    "package": "libpython3.13-minimal",
+    "version": "3.13.5-2+deb13u5",
+    "size": 863168
+  },
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/p/python3.13/python3.13-minimal_3.13.5-2%2bdeb13u5_amd64.deb",
+    "name": "python3.13-minimal_3.13.5-2+deb13u5_amd64.deb",
+    "hash": "sha256-wf2p57G/FbL6daI42KhxDhQv4UxyL8ZQxfxhTweMkHM=",
+    "package": "python3.13-minimal",
+    "version": "3.13.5-2+deb13u5",
+    "size": 2224552
+  },
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/p/python3-defaults/python3-minimal_3.13.5-1_amd64.deb",
+    "name": "python3-minimal_3.13.5-1_amd64.deb",
+    "hash": "sha256-pdI3G+vzaJ9nbj87roADcbzEOSqKUSaeI9UoJJs5lhU=",
+    "package": "python3-minimal",
+    "version": "3.13.5-1",
+    "size": 27248
+  },
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/m/media-types/media-types_13.0.0_all.deb",
+    "name": "media-types_13.0.0_all.deb",
+    "hash": "sha256-B4jksLctsbz3ShnLJMNRHndwrQs0Hw8w42FwHDBy9T4=",
+    "package": "media-types",
+    "version": "13.0.0",
+    "size": 29336
+  },
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/n/netbase/netbase_6.5_all.deb",
+    "name": "netbase_6.5_all.deb",
+    "hash": "sha256-drr6kpR+vTewpvnsZXBBIEH1bt68HGbTI3MSFtMYRx4=",
+    "package": "netbase",
+    "version": "6.5",
+    "size": 12436
+  },
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/libf/libffi/libffi8_3.4.8-2_amd64.deb",
+    "name": "libffi8_3.4.8-2_amd64.deb",
+    "hash": "sha256-Dr3DQN4zMzY5w8Y4dM1LFawug9+h7zBTt+769JGfT2g=",
+    "package": "libffi8",
+    "version": "3.4.8-2",
+    "size": 24144
+  },
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/n/ncurses/libncursesw6_6.5%2b20250216-2_amd64.deb",
+    "name": "libncursesw6_6.5+20250216-2_amd64.deb",
+    "hash": "sha256-R7qi4RV5WDZUWDoGa2m9Wl0vIkIwgfcH7WwMO6bVOLc=",
+    "package": "libncursesw6",
+    "version": "6.5+20250216-2",
+    "size": 135484
+  },
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/r/readline/readline-common_8.2-6_all.deb",
+    "name": "readline-common_8.2-6_all.deb",
+    "hash": "sha256-936KoL8N5hjxHLCyFlik7WDxd9Y7PPJtf8Nwa20Oqqk=",
+    "package": "readline-common",
+    "version": "8.2-6",
+    "size": 69360
+  },
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/r/readline/libreadline8t64_8.2-6_amd64.deb",
+    "name": "libreadline8t64_8.2-6_amd64.deb",
+    "hash": "sha256-7q3ytedVyfGDiD/uotm1soVgKEJ11fVNPlXQkjsdCWc=",
+    "package": "libreadline8t64",
+    "version": "8.2-6",
+    "size": 168832
+  },
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/p/python3.13/libpython3.13-stdlib_3.13.5-2%2bdeb13u5_amd64.deb",
+    "name": "libpython3.13-stdlib_3.13.5-2+deb13u5_amd64.deb",
+    "hash": "sha256-2xYTIqNIHSwMO5o7mgPDqw4rFxj1S4h1X7Sj+TkWW4Q=",
+    "package": "libpython3.13-stdlib",
+    "version": "3.13.5-2+deb13u5",
+    "size": 1958624
+  },
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/p/python3.13/python3.13_3.13.5-2%2bdeb13u5_amd64.deb",
+    "name": "python3.13_3.13.5-2+deb13u5_amd64.deb",
+    "hash": "sha256-Rgwf1yhFUWrDzp0WhpFvOrLkyG+Kl0bhTSYkOkfiuY0=",
+    "package": "python3.13",
+    "version": "3.13.5-2+deb13u5",
+    "size": 757492
+  },
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/p/python3-defaults/libpython3-stdlib_3.13.5-1_amd64.deb",
+    "name": "libpython3-stdlib_3.13.5-1_amd64.deb",
+    "hash": "sha256-fhQu1kqBzN05cU8hNGe9Nlc27zQa2yvhG+mB9ji5F18=",
+    "package": "libpython3-stdlib",
+    "version": "3.13.5-1",
+    "size": 10180
+  },
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/p/python3-defaults/python3_3.13.5-1_amd64.deb",
+    "name": "python3_3.13.5-1_amd64.deb",
+    "hash": "sha256-wTiBdNxxQObBmm3Tn4oNyzioNc1mxlZE4N3tQ9UiPLA=",
+    "package": "python3",
+    "version": "3.13.5-1",
+    "size": 28244
+  },
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/p/procps/libproc2-0_4.0.4-9_amd64.deb",
+    "name": "libproc2-0_2_4.0.4-9_amd64.deb",
+    "hash": "sha256-ydYcqrGy3fw/F+25W+MbmAn8stryfYU9/2FbxOvQi0s=",
+    "package": "libproc2-0",
+    "version": "2:4.0.4-9",
+    "size": 65596
+  },
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/p/procps/procps_4.0.4-9_amd64.deb",
+    "name": "procps_2_4.0.4-9_amd64.deb",
+    "hash": "sha256-TbkLtndncvxSWF1rH7/FLsKoVIDhtDY7dD+7L/oqU3U=",
+    "package": "procps",
+    "version": "2:4.0.4-9",
+    "size": 882088
+  },
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/o/openssl/openssl_3.5.7-1%7edeb13u2_amd64.deb",
+    "name": "openssl_3.5.7-1~deb13u2_amd64.deb",
+    "hash": "sha256-T/AG9DHYwuafpzaIWjtud58kSFNfadvegh2fD/h62Oo=",
+    "package": "openssl",
+    "version": "3.5.7-1~deb13u2",
+    "size": 1507300
+  },
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/c/ca-certificates/ca-certificates_20250419_all.deb",
+    "name": "ca-certificates_20250419_all.deb",
+    "hash": "sha256-71kPiVY6pLRsgmDUnRzqD8GxgdGejfN4JpRwat8FwYQ=",
+    "package": "ca-certificates",
+    "version": "20250419",
+    "size": 161704
+  },
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/f/file/libmagic-mgc_5.46-5_amd64.deb",
+    "name": "libmagic-mgc_1_5.46-5_amd64.deb",
+    "hash": "sha256-E2jafEx90Q+y+e4+2KcIAWUMDB0kmkB2rxXi3fuxS0Y=",
+    "package": "libmagic-mgc",
+    "version": "1:5.46-5",
+    "size": 337800
+  },
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/f/file/libmagic1t64_5.46-5_amd64.deb",
+    "name": "libmagic1t64_1_5.46-5_amd64.deb",
+    "hash": "sha256-U/ZThzIWsTVXC0LEI+qTglwAisRkeAtFeOgO5CQjek4=",
+    "package": "libmagic1t64",
+    "version": "1:5.46-5",
+    "size": 109312
+  },
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/f/file/file_5.46-5_amd64.deb",
+    "name": "file_1_5.46-5_amd64.deb",
+    "hash": "sha256-W5gLAqfZGquctQxlrH4FlnijbTbtYm7FJQZEL0UBoac=",
+    "package": "file",
+    "version": "1:5.46-5",
+    "size": 43560
+  },
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/s/systemd/libpam-systemd_257.13-1%7edeb13u1_amd64.deb",
+    "name": "libpam-systemd_257.13-1~deb13u1_amd64.deb",
+    "hash": "sha256-/PTufQnhSsnlLYqa249gm6BsxqPsvMwgXiyaG6HDnRY=",
+    "package": "libpam-systemd",
+    "version": "257.13-1~deb13u1",
+    "size": 297256
+  },
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/g/gdk-pixbuf/libgdk-pixbuf2.0-common_2.42.12%2bdfsg-4%2bdeb13u1_all.deb",
+    "name": "libgdk-pixbuf2.0-common_2.42.12+dfsg-4+deb13u1_all.deb",
+    "hash": "sha256-nwxk4zz1uzImpabd9jDddlMFluR25rR6iyfaRE/0OgM=",
+    "package": "libgdk-pixbuf2.0-common",
+    "version": "2.42.12+dfsg-4+deb13u1",
+    "size": 311852
+  },
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/g/gcc-14/libatomic1_14.2.0-19_amd64.deb",
+    "name": "libatomic1_14.2.0-19_amd64.deb",
+    "hash": "sha256-ISs5mq4vcpkgPSYaV+STcuCVZaml6pcZBflKOWA2bAU=",
+    "package": "libatomic1",
+    "version": "14.2.0-19",
+    "size": 9308
+  },
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/g/glib2.0/libglib2.0-0t64_2.84.4-3%7edeb13u5_amd64.deb",
+    "name": "libglib2.0-0t64_2.84.4-3~deb13u5_amd64.deb",
+    "hash": "sha256-4rr5LFfR2xdT5XgaYUUNmgHngzx70t/od3amgRwR7MI=",
+    "package": "libglib2.0-0t64",
+    "version": "2.84.4-3~deb13u5",
+    "size": 1521120
+  },
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/libx/libxml2/libxml2_2.12.7%2bdfsg%2breally2.9.14-2.1%2bdeb13u3_amd64.deb",
+    "name": "libxml2_2.12.7+dfsg+really2.9.14-2.1+deb13u3_amd64.deb",
+    "hash": "sha256-4Ma2PORgKgNqUm9g/l5sFYZxBogFjZj8EAG5sxR7fv0=",
+    "package": "libxml2",
+    "version": "2.12.7+dfsg+really2.9.14-2.1+deb13u3",
+    "size": 699724
+  },
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/s/shared-mime-info/shared-mime-info_2.4-5%2bb2_amd64.deb",
+    "name": "shared-mime-info_2.4-5+b2_amd64.deb",
+    "hash": "sha256-19Bh3ykyawymsnOskzIWhln/FWJlnwozYJZXoUPdeIE=",
+    "package": "shared-mime-info",
+    "version": "2.4-5+b2",
+    "size": 759952
+  },
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/libj/libjpeg-turbo/libjpeg62-turbo_2.1.5-4_amd64.deb",
+    "name": "libjpeg62-turbo_1_2.1.5-4_amd64.deb",
+    "hash": "sha256-VQQpmtDjwKnKn5YqaKZQoEDbUvn0FqEJ5030jVVgHT8=",
+    "package": "libjpeg62-turbo",
+    "version": "1:2.1.5-4",
+    "size": 168152
+  },
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/libp/libpng1.6/libpng16-16t64_1.6.48-1%2bdeb13u5_amd64.deb",
+    "name": "libpng16-16t64_1.6.48-1+deb13u5_amd64.deb",
+    "hash": "sha256-JGW06fqFz/VNwQpto+ZAdNjZKSyG5Kj5ibgJ1rFY6X4=",
+    "package": "libpng16-16t64",
+    "version": "1.6.48-1+deb13u5",
+    "size": 283204
+  },
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/libd/libdeflate/libdeflate0_1.23-2_amd64.deb",
+    "name": "libdeflate0_1.23-2_amd64.deb",
+    "hash": "sha256-X+N/t51T9ckdpro6xMGoRT4fKx/w4OpFGJxTOLv9v4I=",
+    "package": "libdeflate0",
+    "version": "1.23-2",
+    "size": 47344
+  },
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/j/jbigkit/libjbig0_2.1-6.1%2bb2_amd64.deb",
+    "name": "libjbig0_2.1-6.1+b2_amd64.deb",
+    "hash": "sha256-lcvERWFlHhszhUVN8I6PLv6ESY9pY6hSWb4swv55hwk=",
+    "package": "libjbig0",
+    "version": "2.1-6.1+b2",
+    "size": 32116
+  },
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/l/lerc/liblerc4_4.0.0%2bds-5_amd64.deb",
+    "name": "liblerc4_4.0.0+ds-5_amd64.deb",
+    "hash": "sha256-LgwTwN294SlowscTwuBHSlt46Q1SFgMSVqcl6Mdqoxw=",
+    "package": "liblerc4",
+    "version": "4.0.0+ds-5",
+    "size": 182976
+  },
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/libw/libwebp/libsharpyuv0_1.5.0-0.1_amd64.deb",
+    "name": "libsharpyuv0_1.5.0-0.1_amd64.deb",
+    "hash": "sha256-UZNIM9kJWI93Yf2ENiEU6Q2NLTivV+3131xKcF4DdUc=",
+    "package": "libsharpyuv0",
+    "version": "1.5.0-0.1",
+    "size": 115612
+  },
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/libw/libwebp/libwebp7_1.5.0-0.1_amd64.deb",
+    "name": "libwebp7_1.5.0-0.1_amd64.deb",
+    "hash": "sha256-x0l0SwSr3RQmsMdxjlFjYsA6VXxRUWYgktbU8s7258E=",
+    "package": "libwebp7",
+    "version": "1.5.0-0.1",
+    "size": 317856
+  },
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/t/tiff/libtiff6_4.7.0-3%2bdeb13u3_amd64.deb",
+    "name": "libtiff6_4.7.0-3+deb13u3_amd64.deb",
+    "hash": "sha256-a7IDjzaBeuHubTPfA5F7IYNdzC4PPj6ApxOQ6DwXEXM=",
+    "package": "libtiff6",
+    "version": "4.7.0-3+deb13u3",
+    "size": 345492
+  },
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/g/gdk-pixbuf/libgdk-pixbuf-2.0-0_2.42.12%2bdfsg-4%2bdeb13u1_amd64.deb",
+    "name": "libgdk-pixbuf-2.0-0_2.42.12+dfsg-4+deb13u1_amd64.deb",
+    "hash": "sha256-lBUPuVWy06ml4FTjHFpLBIutSkeSB+hs3kb7yXXIOLQ=",
+    "package": "libgdk-pixbuf-2.0-0",
+    "version": "2.42.12+dfsg-4+deb13u1",
+    "size": 141088
+  },
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/g/gtk4/gtk-update-icon-cache_4.18.6%2bds-2_amd64.deb",
+    "name": "gtk-update-icon-cache_4.18.6+ds-2_amd64.deb",
+    "hash": "sha256-iDeKSKwH0lP7m/BQPfv77iA37ZzYPu/x3zmIAasYMSU=",
+    "package": "gtk-update-icon-cache",
+    "version": "4.18.6+ds-2",
+    "size": 52700
+  },
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/h/hicolor-icon-theme/hicolor-icon-theme_0.18-2_all.deb",
+    "name": "hicolor-icon-theme_0.18-2_all.deb",
+    "hash": "sha256-2R/vg6GG0/yf/yk7/X2k9oT3NtFUWdJYpaDSURaMGjU=",
+    "package": "hicolor-icon-theme",
+    "version": "0.18-2",
+    "size": 11832
+  },
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/a/adwaita-icon-theme/adwaita-icon-theme_48.1-1_all.deb",
+    "name": "adwaita-icon-theme_48.1-1_all.deb",
+    "hash": "sha256-9gsFd67jFNQ9aQjKfwuPB9xI4rt2bn4lA1MwgX4Ognw=",
+    "package": "adwaita-icon-theme",
+    "version": "48.1-1",
+    "size": 504356
+  },
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/a/aptitude/aptitude-common_0.8.13-7_all.deb",
+    "name": "aptitude-common_0.8.13-7_all.deb",
+    "hash": "sha256-qTb/AYdmq5lELvnirDTaMo7LuTXU9Z7HETji3rsr0KU=",
+    "package": "aptitude-common",
+    "version": "0.8.13-7",
+    "size": 1718408
+  },
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/b/boost1.83/libboost-iostreams1.83.0_1.83.0-4.2_amd64.deb",
+    "name": "libboost-iostreams1.83.0_1.83.0-4.2_amd64.deb",
+    "hash": "sha256-ZdtsaQCjXESiPmgKqfW5POb9UcaxjrdPZM7L2CQHc4Y=",
+    "package": "libboost-iostreams1.83.0",
+    "version": "1.83.0-4.2",
+    "size": 253636
+  },
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/libs/libsigc%2b%2b-2.0/libsigc%2b%2b-2.0-0v5_2.12.1-3_amd64.deb",
+    "name": "libsigc++-2.0-0v5_2.12.1-3_amd64.deb",
+    "hash": "sha256-7mmU6ZLZvBHAZ2nik9lREdPgeKJvGqFMlMgmYA1f33w=",
+    "package": "libsigc++-2.0-0v5",
+    "version": "2.12.1-3",
+    "size": 24672
+  },
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/c/cwidget/libcwidget4_0.5.18-6%2bb2_amd64.deb",
+    "name": "libcwidget4_0.5.18-6+b2_amd64.deb",
+    "hash": "sha256-7RuI02GmD0mp0gqbV5hvRv6HoNCrTheiiiDd89M3hGc=",
+    "package": "libcwidget4",
+    "version": "0.5.18-6+b2",
+    "size": 323924
+  },
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/x/xapian-core/libxapian30_1.4.29-3%2bdeb13u1_amd64.deb",
+    "name": "libxapian30_1.4.29-3+deb13u1_amd64.deb",
+    "hash": "sha256-VEWfU5o5YGX/+myHymzV0F3Lhmal7Z8GcGAJ8csn8EU=",
+    "package": "libxapian30",
+    "version": "1.4.29-3+deb13u1",
+    "size": 1165512
+  },
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/a/aptitude/aptitude_0.8.13-7_amd64.deb",
+    "name": "aptitude_0.8.13-7_amd64.deb",
+    "hash": "sha256-wiaScHkuX9SdQa4LboyDuDvFAiTzvoSykCpSQ1e6ggM=",
+    "package": "aptitude",
+    "version": "0.8.13-7",
+    "size": 1409748
+  },
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/a/at-spi2-core/at-spi2-common_2.56.2-1%2bdeb13u2_all.deb",
+    "name": "at-spi2-common_2.56.2-1+deb13u2_all.deb",
+    "hash": "sha256-oqe1PJkl7DOkcdVt1g9e/+Nc7OEJ7EKWzI2YoSUCE7Q=",
+    "package": "at-spi2-common",
+    "version": "2.56.2-1+deb13u2",
+    "size": 170748
+  },
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/d/dbus/dbus-user-session_1.16.2-2_amd64.deb",
+    "name": "dbus-user-session_1.16.2-2_amd64.deb",
+    "hash": "sha256-D5qndacIsosaOteE6dHwyWInUhvCnpndv+Bf8Ai10kY=",
+    "package": "dbus-user-session",
+    "version": "1.16.2-2",
+    "size": 52128
+  },
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/d/dconf/libdconf1_0.40.0-5_amd64.deb",
+    "name": "libdconf1_0.40.0-5_amd64.deb",
+    "hash": "sha256-bn9nDhz0k66PYN6lL1pK71ZgXVsG2SERPXwqKAD/WvE=",
+    "package": "libdconf1",
+    "version": "0.40.0-5",
+    "size": 41796
+  },
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/d/dconf/dconf-service_0.40.0-5_amd64.deb",
+    "name": "dconf-service_0.40.0-5_amd64.deb",
+    "hash": "sha256-Sh/u2kYFvoVh7DL7TQZV++IxPmLkVxBxaPUo2Vm1MLg=",
+    "package": "dconf-service",
+    "version": "0.40.0-5",
+    "size": 32364
+  },
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/d/dconf/dconf-gsettings-backend_0.40.0-5_amd64.deb",
+    "name": "dconf-gsettings-backend_0.40.0-5_amd64.deb",
+    "hash": "sha256-OT6N7/zHjUOW6GDxDLXn0Kq0SNbgllrdYpQfzSe+APs=",
+    "package": "dconf-gsettings-backend",
+    "version": "0.40.0-5",
+    "size": 28636
+  },
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/d/distro-info-data/distro-info-data_0.66%2bdeb13u2_all.deb",
+    "name": "distro-info-data_0.66+deb13u2_all.deb",
+    "hash": "sha256-kb811u+ioS4NgavqGBnof+8tKSiZ9BxAp+4QheksumA=",
+    "package": "distro-info-data",
+    "version": "0.66+deb13u2",
+    "size": 6792
+  },
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/b/brotli/libbrotli1_1.1.0-2%2bb7_amd64.deb",
+    "name": "libbrotli1_1.1.0-2+b7_amd64.deb",
+    "hash": "sha256-D7efiNshCvvWkoKrlknlJfOT7GlQyjTaGms1klC419s=",
+    "package": "libbrotli1",
+    "version": "1.1.0-2+b7",
+    "size": 306624
+  },
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/f/freetype/libfreetype6_2.13.3%2bdfsg-1%2bdeb13u1_amd64.deb",
+    "name": "libfreetype6_2.13.3+dfsg-1+deb13u1_amd64.deb",
+    "hash": "sha256-5JR/MpFSjwPVdPKwHVxfxFxYxHSA8yiIpc3w8jGrWE4=",
+    "package": "libfreetype6",
+    "version": "2.13.3+dfsg-1+deb13u1",
+    "size": 452308
+  },
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/f/fonts-dejavu/fonts-dejavu-mono_2.37-8_all.deb",
+    "name": "fonts-dejavu-mono_2.37-8_all.deb",
+    "hash": "sha256-MAPpil3r/erccECn9xX+n+b7Z/aN6s9gSbVOMPB/wBQ=",
+    "package": "fonts-dejavu-mono",
+    "version": "2.37-8",
+    "size": 488808
+  },
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/f/fonts-dejavu/fonts-dejavu-core_2.37-8_all.deb",
+    "name": "fonts-dejavu-core_2.37-8_all.deb",
+    "hash": "sha256-hmNbPSWzZV/BHLPsw69Z8L8ZZDsCuU8t5IvRAlPNuhI=",
+    "package": "fonts-dejavu-core",
+    "version": "2.37-8",
+    "size": 840460
+  },
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/f/fontconfig/fontconfig-config_2.15.0-2.3_amd64.deb",
+    "name": "fontconfig-config_2.15.0-2.3_amd64.deb",
+    "hash": "sha256-BHXADQJmDAehUIUFGBhiUzG7UC4FMkIQaqqh8t20EiU=",
+    "package": "fontconfig-config",
+    "version": "2.15.0-2.3",
+    "size": 318308
+  },
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/f/fontconfig/libfontconfig1_2.15.0-2.3_amd64.deb",
+    "name": "libfontconfig1_2.15.0-2.3_amd64.deb",
+    "hash": "sha256-eukexZhXzI43XrK903Gkpp2uo493h9BtR0qEeGfYUrE=",
+    "package": "libfontconfig1",
+    "version": "2.15.0-2.3",
+    "size": 391576
+  },
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/f/fontconfig/fontconfig_2.15.0-2.3_amd64.deb",
+    "name": "fontconfig_2.15.0-2.3_amd64.deb",
+    "hash": "sha256-CXlLGI4ELJC0qJ/LWv6ydrwjG3Td+KPvu8fftvDqxMs=",
+    "package": "fontconfig",
+    "version": "2.15.0-2.3",
+    "size": 463312
+  },
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/p/python-apt/python-apt-common_3.0.0_all.deb",
+    "name": "python-apt-common_3.0.0_all.deb",
+    "hash": "sha256-mqy2NfoE4Bq1agr0hpoDSpSq3NVk1mKpEEjNGf59bgw=",
+    "package": "python-apt-common",
+    "version": "3.0.0",
+    "size": 68248
+  },
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/p/python-apt/python3-apt_3.0.0_amd64.deb",
+    "name": "python3-apt_3.0.0_amd64.deb",
+    "hash": "sha256-59erjdtj2oQQKIuQLE0iN7homhK6AAhRrzeuQp6Q5hg=",
+    "package": "python3-apt",
+    "version": "3.0.0",
+    "size": 164280
+  },
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/p/python-charset-normalizer/python3-charset-normalizer_3.4.2-1_amd64.deb",
+    "name": "python3-charset-normalizer_3.4.2-1_amd64.deb",
+    "hash": "sha256-hKzC1562deAMQagDEVfodSmpe8VQQw2aYUYGkoX+6Lw=",
+    "package": "python3-charset-normalizer",
+    "version": "3.4.2-1",
+    "size": 127636
+  },
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/p/python-debian/python3-debian_1.0.1_all.deb",
+    "name": "python3-debian_1.0.1_all.deb",
+    "hash": "sha256-Qatly6ggUOGLEq+/NAQP/Hw9b+MhUvCuXzO0NPHR5EM=",
+    "package": "python3-debian",
+    "version": "1.0.1",
+    "size": 119716
+  },
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/g/gdebi/gdebi-core_0.9.5.8_all.deb",
+    "name": "gdebi-core_0.9.5.8_all.deb",
+    "hash": "sha256-x3Db8W0mPio5xX3czQbVZQ2Iu7dSQPU035A50uQXj6I=",
+    "package": "gdebi-core",
+    "version": "0.9.5.8",
+    "size": 113588
+  },
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/a/at-spi2-core/libatk1.0-0t64_2.56.2-1%2bdeb13u2_amd64.deb",
+    "name": "libatk1.0-0t64_2.56.2-1+deb13u2_amd64.deb",
+    "hash": "sha256-JHhryQ4/+AxNHYvbXsGLtfBt+QgaUjPrCA8yAvz2ocM=",
+    "package": "libatk1.0-0t64",
+    "version": "2.56.2-1+deb13u2",
+    "size": 51996
+  },
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/libx/libxau/libxau6_1.0.11-1_amd64.deb",
+    "name": "libxau6_1_1.0.11-1_amd64.deb",
+    "hash": "sha256-aJqfDguj4sZUMfhkhx4wPukE3mndKKv8RiZj+uAwIn8=",
+    "package": "libxau6",
+    "version": "1:1.0.11-1",
+    "size": 20392
+  },
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/libx/libxdmcp/libxdmcp6_1.1.5-1_amd64.deb",
+    "name": "libxdmcp6_1_1.1.5-1_amd64.deb",
+    "hash": "sha256-B0DcdgkWsgCLRUF6Qqj9fdXeNw+1fTE3PxUDTNqKzws=",
+    "package": "libxdmcp6",
+    "version": "1:1.1.5-1",
+    "size": 27756
+  },
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/libx/libxcb/libxcb1_1.17.0-2%2bb1_amd64.deb",
+    "name": "libxcb1_1.17.0-2+b1_amd64.deb",
+    "hash": "sha256-XCIqctEbhmRH2jFpMlT3OEMHJuPgZaOE6CaHsv0vl4s=",
+    "package": "libxcb1",
+    "version": "1.17.0-2+b1",
+    "size": 144340
+  },
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/libx/libx11/libx11-data_1.8.12-1_all.deb",
+    "name": "libx11-data_2_1.8.12-1_all.deb",
+    "hash": "sha256-xU+HBpiI+Auk2lhtphR9dMdZjM3YuQkG28QnH6QUxzg=",
+    "package": "libx11-data",
+    "version": "2:1.8.12-1",
+    "size": 343072
+  },
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/libx/libx11/libx11-6_1.8.12-1_amd64.deb",
+    "name": "libx11-6_2_1.8.12-1_amd64.deb",
+    "hash": "sha256-taP9O/jI/QNkv7m+oA3Lp/wwEim9At3tCEYy0x9bD7M=",
+    "package": "libx11-6",
+    "version": "2:1.8.12-1",
+    "size": 815292
+  },
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/libx/libxext/libxext6_1.3.4-1%2bb3_amd64.deb",
+    "name": "libxext6_2_1.3.4-1+b3_amd64.deb",
+    "hash": "sha256-/GGOxARl5c5IYiYGKZy0eDPvw/sjW6FVQ7gfhQci9EM=",
+    "package": "libxext6",
+    "version": "2:1.3.4-1+b3",
+    "size": 50448
+  },
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/libx/libxi/libxi6_1.8.2-1_amd64.deb",
+    "name": "libxi6_2_1.8.2-1_amd64.deb",
+    "hash": "sha256-CT0JA/Nbt6n2gVGA7gQOaVH+z5tmwSjNcvBkcQIQYG4=",
+    "package": "libxi6",
+    "version": "2:1.8.2-1",
+    "size": 78896
+  },
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/a/at-spi2-core/libatspi2.0-0t64_2.56.2-1%2bdeb13u2_amd64.deb",
+    "name": "libatspi2.0-0t64_2.56.2-1+deb13u2_amd64.deb",
+    "hash": "sha256-ZenJ7L2CD7otBBBM3dC60z0lbL3+DRy1Nl8Q42PfIxU=",
+    "package": "libatspi2.0-0t64",
+    "version": "2.56.2-1+deb13u2",
+    "size": 81056
+  },
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/a/at-spi2-core/libatk-bridge2.0-0t64_2.56.2-1%2bdeb13u2_amd64.deb",
+    "name": "libatk-bridge2.0-0t64_2.56.2-1+deb13u2_amd64.deb",
+    "hash": "sha256-wP6H6hvcovk46qgoavWtOOzRXPGMbPtZYdfUasMZIyU=",
+    "package": "libatk-bridge2.0-0t64",
+    "version": "2.56.2-1+deb13u2",
+    "size": 68516
+  },
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/a/avahi/libavahi-common-data_0.8-16_amd64.deb",
+    "name": "libavahi-common-data_0.8-16_amd64.deb",
+    "hash": "sha256-o8DLEybtYMu+8TPDGvKHWfepItiG0AGhONUrvwr5CNY=",
+    "package": "libavahi-common-data",
+    "version": "0.8-16",
+    "size": 112284
+  },
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/a/avahi/libavahi-common3_0.8-16_amd64.deb",
+    "name": "libavahi-common3_0.8-16_amd64.deb",
+    "hash": "sha256-+wkvxV8cfz2wrGRGfzDrroFFVDVwuOmfF86Ezx3Si7Y=",
+    "package": "libavahi-common3",
+    "version": "0.8-16",
+    "size": 44224
+  },
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/a/avahi/libavahi-client3_0.8-16_amd64.deb",
+    "name": "libavahi-client3_0.8-16_amd64.deb",
+    "hash": "sha256-J98/HAGQ0T7G0BTFUVwuyOmknQmD9I/J5XVu5OYtfjc=",
+    "package": "libavahi-client3",
+    "version": "0.8-16",
+    "size": 48384
+  },
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/p/pixman/libpixman-1-0_0.44.0-3_amd64.deb",
+    "name": "libpixman-1-0_0.44.0-3_amd64.deb",
+    "hash": "sha256-OGLIdZb2tLYPyRY5X9aaoQryiodajlwIGozzDd0SC9Y=",
+    "package": "libpixman-1-0",
+    "version": "0.44.0-3",
+    "size": 247888
+  },
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/libx/libxcb/libxcb-render0_1.17.0-2%2bb1_amd64.deb",
+    "name": "libxcb-render0_1.17.0-2+b1_amd64.deb",
+    "hash": "sha256-f242l44PcKWQ+61AQqaSxwtQyny83FP6fp2auHkzrMY=",
+    "package": "libxcb-render0",
+    "version": "1.17.0-2+b1",
+    "size": 115100
+  },
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/libx/libxcb/libxcb-shm0_1.17.0-2%2bb1_amd64.deb",
+    "name": "libxcb-shm0_1.17.0-2+b1_amd64.deb",
+    "hash": "sha256-0Xd6gT9ITonz3KrdHV8rGhPpMTtr9w7e0W2M50Mgj+8=",
+    "package": "libxcb-shm0",
+    "version": "1.17.0-2+b1",
+    "size": 105284
+  },
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/libx/libxrender/libxrender1_0.9.12-1_amd64.deb",
+    "name": "libxrender1_1_0.9.12-1_amd64.deb",
+    "hash": "sha256-nQQt/V5hO+HgLm3dDFxK3vGcXrCPbbg4wuumcsSW3KQ=",
+    "package": "libxrender1",
+    "version": "1:0.9.12-1",
+    "size": 27896
+  },
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/c/cairo/libcairo2_1.18.4-1%2bb1_amd64.deb",
+    "name": "libcairo2_1.18.4-1+b1_amd64.deb",
+    "hash": "sha256-ATkLBJZh5MyL05zveLQcJYfUA1YZ07ANbHhG9D2Au7o=",
+    "package": "libcairo2",
+    "version": "1.18.4-1+b1",
+    "size": 537556
+  },
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/c/cairo/libcairo-gobject2_1.18.4-1%2bb1_amd64.deb",
+    "name": "libcairo-gobject2_1.18.4-1+b1_amd64.deb",
+    "hash": "sha256-T81DLr6Pk1mb0FQm8wTi9wQJqtJx/GtLOixiQ8mcN3w=",
+    "package": "libcairo-gobject2",
+    "version": "1.18.4-1+b1",
+    "size": 130284
+  },
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/libc/libcloudproviders/libcloudproviders0_0.3.6-2_amd64.deb",
+    "name": "libcloudproviders0_0.3.6-2_amd64.deb",
+    "hash": "sha256-pia7I+2evEvDzkRrVSBI3mPXZ2i/D7SSdUllxe4op+Q=",
+    "package": "libcloudproviders0",
+    "version": "0.3.6-2",
+    "size": 29232
+  },
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/l/lcms2/liblcms2-2_2.16-2%2bdeb13u2_amd64.deb",
+    "name": "liblcms2-2_2.16-2+deb13u2_amd64.deb",
+    "hash": "sha256-MuU8IALM6oxgwCd5vqC6SawTL+9wKYijDWSvebZheAY=",
+    "package": "liblcms2-2",
+    "version": "2.16-2+deb13u2",
+    "size": 160264
+  },
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/c/colord/libcolord2_1.4.7-3_amd64.deb",
+    "name": "libcolord2_1.4.7-3_amd64.deb",
+    "hash": "sha256-8R/TtJJ4ESLt8HkPHh/iTFGkHGfUu3bP+EqUJsVlT6c=",
+    "package": "libcolord2",
+    "version": "1.4.7-3",
+    "size": 139204
+  },
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/e/e2fsprogs/libcom-err2_1.47.2-3%2bb12_amd64.deb",
+    "name": "libcom-err2_1.47.2-3+b12_amd64.deb",
+    "hash": "sha256-vUPgILj+05nbPuvwmBEfEPukxDb/+ZzK1yzH4nyXZOw=",
+    "package": "libcom-err2",
+    "version": "1.47.2-3+b12",
+    "size": 25036
+  },
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/libu/libunistring/libunistring5_1.3-2_amd64.deb",
+    "name": "libunistring5_1.3-2_amd64.deb",
+    "hash": "sha256-bdNJC+8G6hCW8y0Qdmt+AWz1eb+uhFHRt98VzgW4qkY=",
+    "package": "libunistring5",
+    "version": "1.3-2",
+    "size": 476768
+  },
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/libi/libidn2/libidn2-0_2.3.8-2_amd64.deb",
+    "name": "libidn2-0_2.3.8-2_amd64.deb",
+    "hash": "sha256-kLA5vNxFePjhxJNa3427Ul42oWTe79u7jEW6w0fUgng=",
+    "package": "libidn2-0",
+    "version": "2.3.8-2",
+    "size": 109096
+  },
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/p/p11-kit/libp11-kit0_0.25.5-3_amd64.deb",
+    "name": "libp11-kit0_0.25.5-3_amd64.deb",
+    "hash": "sha256-eEvyBj4WbIvIUaMmI7dOvYXEmQQ6nVfFu9ZPpjRH9Fo=",
+    "package": "libp11-kit0",
+    "version": "0.25.5-3",
+    "size": 425240
+  },
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/libt/libtasn1-6/libtasn1-6_4.20.0-2%2bdeb13u1_amd64.deb",
+    "name": "libtasn1-6_4.20.0-2+deb13u1_amd64.deb",
+    "hash": "sha256-I/7G4GWDziutmywEybSF6QRA4lmxq/hnfNgNPOYIMa0=",
+    "package": "libtasn1-6",
+    "version": "4.20.0-2+deb13u1",
+    "size": 50112
+  },
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/g/gnutls28/libgnutls30t64_3.8.9-3%2bdeb13u4_amd64.deb",
+    "name": "libgnutls30t64_3.8.9-3+deb13u4_amd64.deb",
+    "hash": "sha256-GKi9/ZHH47ywFxnVWitWhJxxYLNPH1KxxP391BvxNSs=",
+    "package": "libgnutls30t64",
+    "version": "3.8.9-3+deb13u4",
+    "size": 1469024
+  },
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/k/krb5/libkrb5support0_1.21.3-5%2bdeb13u1_amd64.deb",
+    "name": "libkrb5support0_1.21.3-5+deb13u1_amd64.deb",
+    "hash": "sha256-OgrNizeVXA4QLHVrUsl98qMfZ7lkU8Ndq3DfIY0wkRc=",
+    "package": "libkrb5support0",
+    "version": "1.21.3-5+deb13u1",
+    "size": 33124
+  },
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/k/krb5/libk5crypto3_1.21.3-5%2bdeb13u1_amd64.deb",
+    "name": "libk5crypto3_1.21.3-5+deb13u1_amd64.deb",
+    "hash": "sha256-faB+5nS0fx8L58yJMXwlMQCGofF2EhfQ9y5q4sWmm4Q=",
+    "package": "libk5crypto3",
+    "version": "1.21.3-5+deb13u1",
+    "size": 81152
+  },
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/k/keyutils/libkeyutils1_1.6.3-6_amd64.deb",
+    "name": "libkeyutils1_1.6.3-6_amd64.deb",
+    "hash": "sha256-CxGtF74DALY61O60xkUP7STTS3t0DyPlNj3LKe5tXro=",
+    "package": "libkeyutils1",
+    "version": "1.6.3-6",
+    "size": 9456
+  },
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/k/krb5/libkrb5-3_1.21.3-5%2bdeb13u1_amd64.deb",
+    "name": "libkrb5-3_1.21.3-5+deb13u1_amd64.deb",
+    "hash": "sha256-R9cdan8uWbm65fiWAjl1lIBRE7lYia0Y+nA81Tq6/Jc=",
+    "package": "libkrb5-3",
+    "version": "1.21.3-5+deb13u1",
+    "size": 326056
+  },
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/k/krb5/libgssapi-krb5-2_1.21.3-5%2bdeb13u1_amd64.deb",
+    "name": "libgssapi-krb5-2_1.21.3-5+deb13u1_amd64.deb",
+    "hash": "sha256-MIR8H95CQFZ9ftOuq09lXdWRIDdYuFfoXoJARarnApk=",
+    "package": "libgssapi-krb5-2",
+    "version": "1.21.3-5+deb13u1",
+    "size": 138356
+  },
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/c/cups/libcups2t64_2.4.10-3%2bdeb13u2_amd64.deb",
+    "name": "libcups2t64_2.4.10-3+deb13u2_amd64.deb",
+    "hash": "sha256-J4xX2jKvzuwfQGhp55Cyn0DHWwK7jlEt2QPVpSZN+dI=",
+    "package": "libcups2t64",
+    "version": "2.4.10-3+deb13u2",
+    "size": 251548
+  },
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/libd/libdatrie/libdatrie1_0.2.13-3%2bb1_amd64.deb",
+    "name": "libdatrie1_0.2.13-3+b1_amd64.deb",
+    "hash": "sha256-M564jyPXK48LexrrzvurbeYA2XuIvGIi3YqtEdLKkFE=",
+    "package": "libdatrie1",
+    "version": "0.2.13-3+b1",
+    "size": 38132
+  },
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/libd/libdrm/libdrm-common_2.4.124-2_all.deb",
+    "name": "libdrm-common_2.4.124-2_all.deb",
+    "hash": "sha256-mopsZcFl6ZZPEG+0rHEJWbXTPgeQIn46trJ8R0LRJUo=",
+    "package": "libdrm-common",
+    "version": "2.4.124-2",
+    "size": 8288
+  },
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/libd/libdrm/libdrm2_2.4.124-2_amd64.deb",
+    "name": "libdrm2_2.4.124-2_amd64.deb",
+    "hash": "sha256-/iJ2kBx817gHneYwctN/4cvrTrABo7wfHWYq2JqgiQ4=",
+    "package": "libdrm2",
+    "version": "2.4.124-2",
+    "size": 39032
+  },
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/libd/libdrm/libdrm-amdgpu1_2.4.124-2_amd64.deb",
+    "name": "libdrm-amdgpu1_2.4.124-2_amd64.deb",
+    "hash": "sha256-wdl6XjLivGjoM7ir6uAmtjBhmOh+5Dlqf/7NR3nK778=",
+    "package": "libdrm-amdgpu1",
+    "version": "2.4.124-2",
+    "size": 22632
+  },
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/libp/libpciaccess/libpciaccess0_0.17-3%2bb3_amd64.deb",
+    "name": "libpciaccess0_0.17-3+b3_amd64.deb",
+    "hash": "sha256-2aAJEHFjWoToNwUeSBMAWsRFBxcxvs6ij7pNmAbfUlI=",
+    "package": "libpciaccess0",
+    "version": "0.17-3+b3",
+    "size": 51920
+  },
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/libd/libdrm/libdrm-intel1_2.4.124-2_amd64.deb",
+    "name": "libdrm-intel1_2.4.124-2_amd64.deb",
+    "hash": "sha256-GIqx/XTIOLPIBV1iEHNR4WpLt6JdOcMLu5qsMN3Tcjg=",
+    "package": "libdrm-intel1",
+    "version": "2.4.124-2",
+    "size": 64104
+  },
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/d/duktape/libduktape207_2.7.0-2%2bb2_amd64.deb",
+    "name": "libduktape207_2.7.0-2+b2_amd64.deb",
+    "hash": "sha256-LZJgb0nPeeI/tOpnq3cC1S4BamcdMu3FFILE8eO63nw=",
+    "package": "libduktape207",
+    "version": "2.7.0-2+b2",
+    "size": 134688
+  },
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/libe/libedit/libedit2_3.1-20250104-1_amd64.deb",
+    "name": "libedit2_3.1-20250104-1_amd64.deb",
+    "hash": "sha256-sALqFyucHjSme8SXxSPGe7dMPwpOmBE8sIOZCh8dO/4=",
+    "package": "libedit2",
+    "version": "3.1-20250104-1",
+    "size": 93832
+  },
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/e/elfutils/libelf1t64_0.192-4_amd64.deb",
+    "name": "libelf1t64_0.192-4_amd64.deb",
+    "hash": "sha256-lEl7fhe29XSgYFs4DUVOINPwGpxjtwwqImP2edMAU+E=",
+    "package": "libelf1t64",
+    "version": "0.192-4",
+    "size": 189408
+  },
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/libe/libepoxy/libepoxy0_1.5.10-2_amd64.deb",
+    "name": "libepoxy0_1.5.10-2_amd64.deb",
+    "hash": "sha256-TEyAJPIXUIbeZbyp/cP7uWfyhj6/JJ1InGbQyBA906M=",
+    "package": "libepoxy0",
+    "version": "1.5.10-2",
+    "size": 192728
+  },
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/libf/libfontenc/libfontenc1_1.1.8-1%2bb2_amd64.deb",
+    "name": "libfontenc1_1_1.1.8-1+b2_amd64.deb",
+    "hash": "sha256-SfczDhu+P0iUb+5cB4cN9mA3T593s3iEDW7fGjs0RM0=",
+    "package": "libfontenc1",
+    "version": "1:1.1.8-1+b2",
+    "size": 23328
+  },
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/f/fribidi/libfribidi0_1.0.16-1_amd64.deb",
+    "name": "libfribidi0_1.0.16-1_amd64.deb",
+    "hash": "sha256-+MNeyGBtCEO9PPAgxs+jnd/nF+xY7YJrWFW6mSfrDVU=",
+    "package": "libfribidi0",
+    "version": "1.0.16-1",
+    "size": 26484
+  },
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/w/wayland/libwayland-server0_1.23.1-3_amd64.deb",
+    "name": "libwayland-server0_1.23.1-3_amd64.deb",
+    "hash": "sha256-KWchK9WC4N/8pEP9xE9MZg5zaNQffuOn9jFODDq/6eo=",
+    "package": "libwayland-server0",
+    "version": "1.23.1-3",
+    "size": 34432
+  },
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/z/z3/libz3-4_4.13.3-1_amd64.deb",
+    "name": "libz3-4_4.13.3-1_amd64.deb",
+    "hash": "sha256-cTgzc1I+9i1H7M9mDPZTXD/ry7P4jlTLekMSQBS1c1k=",
+    "package": "libz3-4",
+    "version": "4.13.3-1",
+    "size": 8560036
+  },
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/l/llvm-toolchain-19/libllvm19_19.1.7-3%2bb1_amd64.deb",
+    "name": "libllvm19_1_19.1.7-3+b1_amd64.deb",
+    "hash": "sha256-2w1hTWE0XKcQ+3PnUQXx7G44iY+ns6qZ+n632LChHVc=",
+    "package": "libllvm19",
+    "version": "1:19.1.7-3+b1",
+    "size": 25978316
+  },
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/l/lm-sensors/libsensors-config_3.6.2-2_all.deb",
+    "name": "libsensors-config_1_3.6.2-2_all.deb",
+    "hash": "sha256-MFbagMfZY695XatICrb29LFUrUrDn1ItxS0XyDT+olM=",
+    "package": "libsensors-config",
+    "version": "1:3.6.2-2",
+    "size": 16236
+  },
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/l/lm-sensors/libsensors5_3.6.2-2_amd64.deb",
+    "name": "libsensors5_1_3.6.2-2_amd64.deb",
+    "hash": "sha256-8KmUptfPppXepTQ9DRun7teWwK2SDHKCmYuV9gBJxPY=",
+    "package": "libsensors5",
+    "version": "1:3.6.2-2",
+    "size": 37492
+  },
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/libx/libx11/libx11-xcb1_1.8.12-1_amd64.deb",
+    "name": "libx11-xcb1_2_1.8.12-1_amd64.deb",
+    "hash": "sha256-4F+U0hqTL7pbCbmxPZnfd2sVXTvHksDilEUd+f/huiU=",
+    "package": "libx11-xcb1",
+    "version": "2:1.8.12-1",
+    "size": 247128
+  },
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/libx/libxcb/libxcb-dri3-0_1.17.0-2%2bb1_amd64.deb",
+    "name": "libxcb-dri3-0_1.17.0-2+b1_amd64.deb",
+    "hash": "sha256-9EbUL7X867s+NHNouoNhZ2n9snHYWy9JBI4zfzFj0mc=",
+    "package": "libxcb-dri3-0",
+    "version": "1.17.0-2+b1",
+    "size": 106892
+  },
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/libx/libxcb/libxcb-present0_1.17.0-2%2bb1_amd64.deb",
+    "name": "libxcb-present0_1.17.0-2+b1_amd64.deb",
+    "hash": "sha256-25XqRjDFW9fzKBy2DM91sWJ+8vQ5nhk5+PYWHlhKkvs=",
+    "package": "libxcb-present0",
+    "version": "1.17.0-2+b1",
+    "size": 105612
+  },
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/libx/libxcb/libxcb-randr0_1.17.0-2%2bb1_amd64.deb",
+    "name": "libxcb-randr0_1.17.0-2+b1_amd64.deb",
+    "hash": "sha256-9dn+X995eRj4Hwq/bP1CcL1UZZVAzdtNpwmrcVRSMhQ=",
+    "package": "libxcb-randr0",
+    "version": "1.17.0-2+b1",
+    "size": 116736
+  },
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/libx/libxcb/libxcb-sync1_1.17.0-2%2bb1_amd64.deb",
+    "name": "libxcb-sync1_1.17.0-2+b1_amd64.deb",
+    "hash": "sha256-DOR3DtFQW+ndxkcwReRmLQYq/y8wd+5oQmXwHPtUNVk=",
+    "package": "libxcb-sync1",
+    "version": "1.17.0-2+b1",
+    "size": 108688
+  },
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/libx/libxcb/libxcb-xfixes0_1.17.0-2%2bb1_amd64.deb",
+    "name": "libxcb-xfixes0_1.17.0-2+b1_amd64.deb",
+    "hash": "sha256-+cGq/Bi/nkZi40u687sA8fTowvwd14b9+2y5y2xk+uc=",
+    "package": "libxcb-xfixes0",
+    "version": "1.17.0-2+b1",
+    "size": 109288
+  },
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/libx/libxshmfence/libxshmfence1_1.3.3-1_amd64.deb",
+    "name": "libxshmfence1_1.3.3-1_amd64.deb",
+    "hash": "sha256-ezOenlsjSXI9Na9N+JvMeqRWu9+LoXVDWPm0TD/h+WQ=",
+    "package": "libxshmfence1",
+    "version": "1.3.3-1",
+    "size": 10884
+  },
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/m/mesa/mesa-libgallium_25.0.7-2%2bdeb13u1_amd64.deb",
+    "name": "mesa-libgallium_25.0.7-2+deb13u1_amd64.deb",
+    "hash": "sha256-PmEPKTIc3MYTN8hua0Ax/2DwyZFf4Z5qhirAZIBiD/Q=",
+    "package": "mesa-libgallium",
+    "version": "25.0.7-2+deb13u1",
+    "size": 9630224
+  },
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/m/mesa/libgbm1_25.0.7-2%2bdeb13u1_amd64.deb",
+    "name": "libgbm1_25.0.7-2+deb13u1_amd64.deb",
+    "hash": "sha256-MfttdrnOrxOEj6YX31P4X2Jia0/nRkqTgRxyCvbV8t0=",
+    "package": "libgbm1",
+    "version": "25.0.7-2+deb13u1",
+    "size": 44592
+  },
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/libg/libglvnd/libglvnd0_1.7.0-1%2bb2_amd64.deb",
+    "name": "libglvnd0_1.7.0-1+b2_amd64.deb",
+    "hash": "sha256-iH90AIFmVJzp4QDJBqqTfpXW5c4cjYbv6Mlf2VM1m5w=",
+    "package": "libglvnd0",
+    "version": "1.7.0-1+b2",
+    "size": 51960
+  },
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/libx/libxcb/libxcb-glx0_1.17.0-2%2bb1_amd64.deb",
+    "name": "libxcb-glx0_1.17.0-2+b1_amd64.deb",
+    "hash": "sha256-zFmj+hxM43bDoyeYF5lQgQvXub6aNbx23h9bXnzDkl4=",
+    "package": "libxcb-glx0",
+    "version": "1.17.0-2+b1",
+    "size": 122380
+  },
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/libx/libxxf86vm/libxxf86vm1_1.1.4-1%2bb4_amd64.deb",
+    "name": "libxxf86vm1_1_1.1.4-1+b4_amd64.deb",
+    "hash": "sha256-+fhIflNik+fs+R/n/rFOl+AqOqZS4gfGYUQtznddOxQ=",
+    "package": "libxxf86vm1",
+    "version": "1:1.1.4-1+b4",
+    "size": 19320
+  },
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/v/vulkan-loader/libvulkan1_1.4.309.0-1_amd64.deb",
+    "name": "libvulkan1_1.4.309.0-1_amd64.deb",
+    "hash": "sha256-9H2nnNFAJk/iHM6wi8h6cbx/7AWBnkpCHz9RjSEQGjc=",
+    "package": "libvulkan1",
+    "version": "1.4.309.0-1",
+    "size": 130128
+  },
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/m/mesa/libgl1-mesa-dri_25.0.7-2%2bdeb13u1_amd64.deb",
+    "name": "libgl1-mesa-dri_25.0.7-2+deb13u1_amd64.deb",
+    "hash": "sha256-ci+tmUS9/SnrZCFXYzGiaX+DvEs1UdaT7beu/d5rsZg=",
+    "package": "libgl1-mesa-dri",
+    "version": "25.0.7-2+deb13u1",
+    "size": 46240
+  },
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/m/mesa/libglx-mesa0_25.0.7-2%2bdeb13u1_amd64.deb",
+    "name": "libglx-mesa0_25.0.7-2+deb13u1_amd64.deb",
+    "hash": "sha256-Lmq1femTHokGIdOt4EITsG5xQqSuinKhdWxE0Ccarrc=",
+    "package": "libglx-mesa0",
+    "version": "25.0.7-2+deb13u1",
+    "size": 143408
+  },
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/libg/libglvnd/libglx0_1.7.0-1%2bb2_amd64.deb",
+    "name": "libglx0_1.7.0-1+b2_amd64.deb",
+    "hash": "sha256-JyH9yg/jvZY8s5SC6rwlOvUriPSn9tu2nkdVSdr1rzs=",
+    "package": "libglx0",
+    "version": "1.7.0-1+b2",
+    "size": 34892
+  },
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/libg/libglvnd/libgl1_1.7.0-1%2bb2_amd64.deb",
+    "name": "libgl1_1.7.0-1+b2_amd64.deb",
+    "hash": "sha256-h/ovblq67U7ThfrIecjdc1r3Ge4jACItkBeTxm4EFng=",
+    "package": "libgl1",
+    "version": "1.7.0-1+b2",
+    "size": 89504
+  },
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/g/graphite2/libgraphite2-3_1.3.14-2%2bdeb13u1_amd64.deb",
+    "name": "libgraphite2-3_1.3.14-2+deb13u1_amd64.deb",
+    "hash": "sha256-F2m6PtPB/HW3++AmeOMqokORIFgT7O704eNQABXRLuM=",
+    "package": "libgraphite2-3",
+    "version": "1.3.14-2+deb13u1",
+    "size": 75172
+  },
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/h/harfbuzz/libharfbuzz0b_10.2.0-1%2bdeb13u1_amd64.deb",
+    "name": "libharfbuzz0b_10.2.0-1+deb13u1_amd64.deb",
+    "hash": "sha256-kyFluTPl62Myk6/phKmD6+icsnySPOcghibx2mwMeUE=",
+    "package": "libharfbuzz0b",
+    "version": "10.2.0-1+deb13u1",
+    "size": 478952
+  },
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/libt/libthai/libthai-data_0.1.29-2_all.deb",
+    "name": "libthai-data_0.1.29-2_all.deb",
+    "hash": "sha256-/TjUBgKDTVEKKRQL0n/UhIUQXoNPA9zKscAuLtqnlN0=",
+    "package": "libthai-data",
+    "version": "0.1.29-2",
+    "size": 167504
+  },
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/libt/libthai/libthai0_0.1.29-2%2bb1_amd64.deb",
+    "name": "libthai0_0.1.29-2+b1_amd64.deb",
+    "hash": "sha256-5jZMB67v/pqV8mcGHZ3xaOSOnckSbDtA4Z3IKfZ3Aqc=",
+    "package": "libthai0",
+    "version": "0.1.29-2+b1",
+    "size": 49420
+  },
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/p/pango1.0/libpango-1.0-0_1.56.3-1_amd64.deb",
+    "name": "libpango-1.0-0_1.56.3-1_amd64.deb",
+    "hash": "sha256-T6OEcmltLdsQv8mkaSqURuhHj9sfSMdppgn8n+w638U=",
+    "package": "libpango-1.0-0",
+    "version": "1.56.3-1",
+    "size": 226324
+  },
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/p/pango1.0/libpangoft2-1.0-0_1.56.3-1_amd64.deb",
+    "name": "libpangoft2-1.0-0_1.56.3-1_amd64.deb",
+    "hash": "sha256-tQbPZveN31Qt20u0pos9dI1ByqbhkORIBDCmYwweUQU=",
+    "package": "libpangoft2-1.0-0",
+    "version": "1.56.3-1",
+    "size": 55568
+  },
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/p/pango1.0/libpangocairo-1.0-0_1.56.3-1_amd64.deb",
+    "name": "libpangocairo-1.0-0_1.56.3-1_amd64.deb",
+    "hash": "sha256-aZRynFt6lklmHsB4zwOZkfIu/0RgBUOqkXiU+DyJzQU=",
+    "package": "libpangocairo-1.0-0",
+    "version": "1.56.3-1",
+    "size": 35748
+  },
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/w/wayland/libwayland-client0_1.23.1-3_amd64.deb",
+    "name": "libwayland-client0_1.23.1-3_amd64.deb",
+    "hash": "sha256-0WB+HbGnxTeKLlxq57IPZNxqzxNPlT2Ep/UgS3QznzM=",
+    "package": "libwayland-client0",
+    "version": "1.23.1-3",
+    "size": 26816
+  },
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/w/wayland/libwayland-cursor0_1.23.1-3_amd64.deb",
+    "name": "libwayland-cursor0_1.23.1-3_amd64.deb",
+    "hash": "sha256-JvzK4rEih0TeDK1saIVQuNE81OjUzPDP2uAVY07OZz8=",
+    "package": "libwayland-cursor0",
+    "version": "1.23.1-3",
+    "size": 11880
+  },
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/w/wayland/libwayland-egl1_1.23.1-3_amd64.deb",
+    "name": "libwayland-egl1_1.23.1-3_amd64.deb",
+    "hash": "sha256-fFw0KQKLOblDJ5LbCMshjEOJHfQ568ZIuD6+5naoDsU=",
+    "package": "libwayland-egl1",
+    "version": "1.23.1-3",
+    "size": 5860
+  },
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/libx/libxcomposite/libxcomposite1_0.4.6-1_amd64.deb",
+    "name": "libxcomposite1_1_0.4.6-1_amd64.deb",
+    "hash": "sha256-IOPB2bITXwyMQkap/SalGlfVhQw7NuzBc8Rda+cyivM=",
+    "package": "libxcomposite1",
+    "version": "1:0.4.6-1",
+    "size": 16348
+  },
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/libx/libxfixes/libxfixes3_6.0.0-2%2bb4_amd64.deb",
+    "name": "libxfixes3_1_6.0.0-2+b4_amd64.deb",
+    "hash": "sha256-P92V2G2OnWPhH1IHCTXI+fkSw2qjsXM42Wn3aF8+1Ps=",
+    "package": "libxfixes3",
+    "version": "1:6.0.0-2+b4",
+    "size": 20228
+  },
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/libx/libxcursor/libxcursor1_1.2.3-1_amd64.deb",
+    "name": "libxcursor1_1_1.2.3-1_amd64.deb",
+    "hash": "sha256-uw2/WLgE+qp07Z79rmHEsUuwtIVWgHmPY+XKaklUl2s=",
+    "package": "libxcursor1",
+    "version": "1:1.2.3-1",
+    "size": 39732
+  },
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/libx/libxdamage/libxdamage1_1.1.6-1%2bb2_amd64.deb",
+    "name": "libxdamage1_1_1.1.6-1+b2_amd64.deb",
+    "hash": "sha256-5R5D8j8777wflAgnH032dz03yuzpzn4fOKut44L3+/c=",
+    "package": "libxdamage1",
+    "version": "1:1.1.6-1+b2",
+    "size": 15460
+  },
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/libx/libxinerama/libxinerama1_1.1.4-3%2bb4_amd64.deb",
+    "name": "libxinerama1_2_1.1.4-3+b4_amd64.deb",
+    "hash": "sha256-SdThYolgQHuL4ogKQkKOdimAFxWopWl9QsCwygpHmRE=",
+    "package": "libxinerama1",
+    "version": "2:1.1.4-3+b4",
+    "size": 15992
+  },
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/x/xkeyboard-config/xkb-data_2.42-1_all.deb",
+    "name": "xkb-data_2.42-1_all.deb",
+    "hash": "sha256-GW/xhTM4L2TgV+pJ3yu0hr1CdaTMCRc2HttWC4dW2to=",
+    "package": "xkb-data",
+    "version": "2.42-1",
+    "size": 789736
+  },
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/libx/libxkbcommon/libxkbcommon0_1.7.0-2_amd64.deb",
+    "name": "libxkbcommon0_1.7.0-2_amd64.deb",
+    "hash": "sha256-917lRPVazGonHev6s+pK4EWK/InYHP4acRN+B9SJW4Y=",
+    "package": "libxkbcommon0",
+    "version": "1.7.0-2",
+    "size": 112700
+  },
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/libx/libxrandr/libxrandr2_1.5.4-1%2bb3_amd64.deb",
+    "name": "libxrandr2_2_1.5.4-1+b3_amd64.deb",
+    "hash": "sha256-EeNJDek6i77j2rpxnLjhMlom+zwSVSXDS9y33rBeubI=",
+    "package": "libxrandr2",
+    "version": "2:1.5.4-1+b3",
+    "size": 36312
+  },
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/g/gtk%2b3.0/libgtk-3-common_3.24.49-3_all.deb",
+    "name": "libgtk-3-common_3.24.49-3_all.deb",
+    "hash": "sha256-kWG9a5kzOEBzrFus1qO7HimYh3pgVBHXMEH7C3+t1gU=",
+    "package": "libgtk-3-common",
+    "version": "3.24.49-3",
+    "size": 4908188
+  },
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/g/gtk%2b3.0/libgtk-3-0t64_3.24.49-3_amd64.deb",
+    "name": "libgtk-3-0t64_3.24.49-3_amd64.deb",
+    "hash": "sha256-SqiCjwE2X5N/O/afgSyBB+5Miisgj/3XZW6N5d6B2Y8=",
+    "package": "libgtk-3-0t64",
+    "version": "3.24.49-3",
+    "size": 2768812
+  },
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/x/xorg/x11-common_7.7%2b24%2bdeb13u1_all.deb",
+    "name": "x11-common_1_7.7+24+deb13u1_all.deb",
+    "hash": "sha256-V6mBk4UGsm3FUvGcr+qowE6bWdx1CFCRUfhQep1OXyQ=",
+    "package": "x11-common",
+    "version": "1:7.7+24+deb13u1",
+    "size": 216864
+  },
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/libi/libice/libice6_1.1.1-1_amd64.deb",
+    "name": "libice6_2_1.1.1-1_amd64.deb",
+    "hash": "sha256-OBhZlxYnk7Xft2hkS63FeFKHl4Si+dg8bE5H76XjZpg=",
+    "package": "libice6",
+    "version": "2:1.1.1-1",
+    "size": 65376
+  },
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/i/icu/libicu76_76.1-4_amd64.deb",
+    "name": "libicu76_76.1-4_amd64.deb",
+    "hash": "sha256-wb92KZbensupudhx5JKKgJDwI6Pp5/oyQLPZD4kqAdw=",
+    "package": "libicu76",
+    "version": "76.1-4",
+    "size": 9722072
+  },
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/p/policykit-1/libpolkit-gobject-1-0_126-2_amd64.deb",
+    "name": "libpolkit-gobject-1-0_126-2_amd64.deb",
+    "hash": "sha256-f43R2GNhSrOEKQaYU1XHSnc4Q3xyO3s3NujbM8NYZwI=",
+    "package": "libpolkit-gobject-1-0",
+    "version": "126-2",
+    "size": 47960
+  },
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/p/policykit-1/libpolkit-agent-1-0_126-2_amd64.deb",
+    "name": "libpolkit-agent-1-0_126-2_amd64.deb",
+    "hash": "sha256-UeAJs0vq+JX4fCKhV59KRhVzgTQq+PX1CQlE2N4AJrU=",
+    "package": "libpolkit-agent-1-0",
+    "version": "126-2",
+    "size": 26380
+  },
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/libs/libsm/libsm6_1.2.6-1_amd64.deb",
+    "name": "libsm6_2_1.2.6-1_amd64.deb",
+    "hash": "sha256-AwOLMALm9EMiVU4zXWDY/4es/PLiHJBLaGZhCpkT7gA=",
+    "package": "libsm6",
+    "version": "2:1.2.6-1",
+    "size": 37264
+  },
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/libu/libunwind/libunwind8_1.8.1-0.1_amd64.deb",
+    "name": "libunwind8_1.8.1-0.1_amd64.deb",
+    "hash": "sha256-2yGobdBck0E/DvNigqnGTTJBDSQPMyJzpTvhQIvsH2I=",
+    "package": "libunwind8",
+    "version": "1.8.1-0.1",
+    "size": 56252
+  },
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/v/vte2.91/libvte-2.91-common_0.80.1-1_amd64.deb",
+    "name": "libvte-2.91-common_0.80.1-1_amd64.deb",
+    "hash": "sha256-vVIiuH7jD3WDfGTBu3hBTrt/4AQdyMiuqPZeBXJIDoU=",
+    "package": "libvte-2.91-common",
+    "version": "0.80.1-1",
+    "size": 58784
+  },
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/v/vte2.91/libvte-2.91-0_0.80.1-1_amd64.deb",
+    "name": "libvte-2.91-0_0.80.1-1_amd64.deb",
+    "hash": "sha256-U7jFFtLhQ3NRWTIlnnaopiD0k17TkNKd1fHZF214bfQ=",
+    "package": "libvte-2.91-0",
+    "version": "0.80.1-1",
+    "size": 305708
+  },
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/libx/libxt/libxt6t64_1.2.1-1.2%2bb2_amd64.deb",
+    "name": "libxt6t64_1_1.2.1-1.2+b2_amd64.deb",
+    "hash": "sha256-ofRVfAMRNoHuJIY0la3CRM7OyV/jq3JWznbocyAVcwA=",
+    "package": "libxt6t64",
+    "version": "1:1.2.1-1.2+b2",
+    "size": 188232
+  },
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/libx/libxmu/libxmu6_1.1.3-3%2bb4_amd64.deb",
+    "name": "libxmu6_2_1.1.3-3+b4_amd64.deb",
+    "hash": "sha256-z98d7o+avYf1AyIvyLBKMM6CD7ElUke3w6KP+cJEQxo=",
+    "package": "libxmu6",
+    "version": "2:1.1.3-3+b4",
+    "size": 58972
+  },
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/libx/libxpm/libxpm4_3.5.17-1%2bdeb13u1_amd64.deb",
+    "name": "libxpm4_1_3.5.17-1+deb13u1_amd64.deb",
+    "hash": "sha256-0viTO1UueigrvDK8dUVigZXEo2kqIK0OIyzF/ukTB5A=",
+    "package": "libxpm4",
+    "version": "1:3.5.17-1+deb13u1",
+    "size": 55912
+  },
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/libx/libxaw/libxaw7_1.0.16-1_amd64.deb",
+    "name": "libxaw7_2_1.0.16-1_amd64.deb",
+    "hash": "sha256-5586tR7Lv9NBSgVoqJR6xZopww1jHmx7bgfqRuaIwEc=",
+    "package": "libxaw7",
+    "version": "2:1.0.16-1",
+    "size": 211848
+  },
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/libx/libxfont/libxfont2_2.0.6-1%2bdeb13u1_amd64.deb",
+    "name": "libxfont2_1_2.0.6-1+deb13u1_amd64.deb",
+    "hash": "sha256-eaf1bkoMex3vpwbHsfMHb32Aqu6p3iU7KodAYlMxloE=",
+    "package": "libxfont2",
+    "version": "1:2.0.6-1+deb13u1",
+    "size": 132904
+  },
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/libx/libxkbfile/libxkbfile1_1.1.0-1%2bb4_amd64.deb",
+    "name": "libxkbfile1_1_1.1.0-1+b4_amd64.deb",
+    "hash": "sha256-mJth4Ot/H5nQ6WmllX6ahXqVlB1cDobV4rUCAItKwo4=",
+    "package": "libxkbfile1",
+    "version": "1:1.1.0-1+b4",
+    "size": 76516
+  },
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/libx/libxmu/libxmuu1_1.1.3-3%2bb4_amd64.deb",
+    "name": "libxmuu1_2_1.1.3-3+b4_amd64.deb",
+    "hash": "sha256-a19TeQVCFZnpYqjOxoyE8G1QbhQ/xwsLVwOAs8SQFng=",
+    "package": "libxmuu1",
+    "version": "2:1.1.3-3+b4",
+    "size": 21896
+  },
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/p/python-idna/python3-idna_3.10-1%2bdeb13u1_all.deb",
+    "name": "python3-idna_3.10-1+deb13u1_all.deb",
+    "hash": "sha256-XPBQILDlxSOs43Ok/qx+B03j6V3zC1otWEhCrMum5gs=",
+    "package": "python3-idna",
+    "version": "3.10-1+deb13u1",
+    "size": 43032
+  },
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/p/python-sniffio/python3-sniffio_1.3.1-1_all.deb",
+    "name": "python3-sniffio_1.3.1-1_all.deb",
+    "hash": "sha256-0S5eWPzIEgo6GqOE15Rns5oXXkOoe0R3XGNKqGWxlK0=",
+    "package": "python3-sniffio",
+    "version": "1.3.1-1",
+    "size": 7120
+  },
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/p/python-typing-extensions/python3-typing-extensions_4.13.2-1_all.deb",
+    "name": "python3-typing-extensions_4.13.2-1_all.deb",
+    "hash": "sha256-tnZi8hHDXBfHSgclvHyP/DsSbGUOKiUlWTre4G8rv2k=",
+    "package": "python3-typing-extensions",
+    "version": "4.13.2-1",
+    "size": 90500
+  },
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/p/python-anyio/python3-anyio_4.8.0-3_all.deb",
+    "name": "python3-anyio_4.8.0-3_all.deb",
+    "hash": "sha256-451+4kDCA7CaN6hd42MIA2K8l3CAEPPoBjKbqDdGUKY=",
+    "package": "python3-anyio",
+    "version": "4.8.0-3",
+    "size": 63588
+  },
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/p/python-click/python3-click_8.2.0%2b0.really.8.1.8-1_all.deb",
+    "name": "python3-click_8.2.0+0.really.8.1.8-1_all.deb",
+    "hash": "sha256-pGTJsRkw8pPIgIzF6gSYMNhkWg0xS/p+KUgDy5g+4V4=",
+    "package": "python3-click",
+    "version": "8.2.0+0.really.8.1.8-1",
+    "size": 95388
+  },
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/p/pygments/python3-pygments_2.18.0%2bdfsg-2_all.deb",
+    "name": "python3-pygments_2.18.0+dfsg-2_all.deb",
+    "hash": "sha256-nK2uyYTQ2SP4HiCi3WiXTbZD9nrWrcilk6e72q2PhVQ=",
+    "package": "python3-pygments",
+    "version": "2.18.0+dfsg-2",
+    "size": 835724
+  },
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/m/mdurl/python3-mdurl_0.1.2-1_all.deb",
+    "name": "python3-mdurl_0.1.2-1_all.deb",
+    "hash": "sha256-L8XoUnsvMi71WyyRoMUSzVSBmY/JTFB9/89cL2aTDqE=",
+    "package": "python3-mdurl",
+    "version": "0.1.2-1",
+    "size": 9444
+  },
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/u/uc-micro-py/python3-uc-micro_1.0.3-1_all.deb",
+    "name": "python3-uc-micro_1.0.3-1_all.deb",
+    "hash": "sha256-k5YHIwl00tkjc+2EsZyO/WKuc5VRLJFFyMeNCeMqsi8=",
+    "package": "python3-uc-micro",
+    "version": "1.0.3-1",
+    "size": 5744
+  },
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/l/linkify-it-py/python3-linkify-it_2.0.3-1_all.deb",
+    "name": "python3-linkify-it_2.0.3-1_all.deb",
+    "hash": "sha256-97Mgag9cvLFqnQyOqe3A50hhtOTVx0TohmrniYA+dCA=",
+    "package": "python3-linkify-it",
+    "version": "2.0.3-1",
+    "size": 18712
+  },
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/m/markdown-it-py/python3-markdown-it_3.0.0-3_all.deb",
+    "name": "python3-markdown-it_3.0.0-3_all.deb",
+    "hash": "sha256-N4tztL/NE99vjZGzDcCAbGewm3bIF+yvX+0UiyexW9o=",
+    "package": "python3-markdown-it",
+    "version": "3.0.0-3",
+    "size": 59456
+  },
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/r/rich/python3-rich_13.9.4-1_all.deb",
+    "name": "python3-rich_13.9.4-1_all.deb",
+    "hash": "sha256-dFKW3TFgODF9o+owUFLxa24tpAwedFTE1V9IODC5gYg=",
+    "package": "python3-rich",
+    "version": "13.9.4-1",
+    "size": 202836
+  },
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/p/python-certifi/python3-certifi_2025.1.31%2bds-1_all.deb",
+    "name": "python3-certifi_2025.1.31+ds-1_all.deb",
+    "hash": "sha256-k5sal5IY7CO1+UaeKtioCd5Yj1hruvMpK05hfZh4JL0=",
+    "package": "python3-certifi",
+    "version": "2025.1.31+ds-1",
+    "size": 9652
+  },
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/p/python-h11/python3-h11_0.14.0-1.1_all.deb",
+    "name": "python3-h11_0.14.0-1.1_all.deb",
+    "hash": "sha256-LLeV6NRb4QDvT3A2AkTMnJsVJ/U+3L77vNlOlVNrUEU=",
+    "package": "python3-h11",
+    "version": "0.14.0-1.1",
+    "size": 50616
+  },
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/h/httpcore/python3-httpcore_1.0.7-1_all.deb",
+    "name": "python3-httpcore_1.0.7-1_all.deb",
+    "hash": "sha256-QEsuh+CdNzt6pWfbomJVuImD5wZ+2QmxsTpMAFZ6w1o=",
+    "package": "python3-httpcore",
+    "version": "1.0.7-1",
+    "size": 44720
+  },
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/h/httpx/python3-httpx_0.28.1-1_all.deb",
+    "name": "python3-httpx_0.28.1-1_all.deb",
+    "hash": "sha256-monki2KXOjK4WJVLHsna8OaBGShXzP3X4k2UA99CDBQ=",
+    "package": "python3-httpx",
+    "version": "0.28.1-1",
+    "size": 76192
+  },
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/p/ptyprocess/python3-ptyprocess_0.7.0-6_all.deb",
+    "name": "python3-ptyprocess_0.7.0-6_all.deb",
+    "hash": "sha256-aIb1OO4rKv/MTioeNZqRQ8pKKgaNEimBFuKUaH9ikPA=",
+    "package": "python3-ptyprocess",
+    "version": "0.7.0-6",
+    "size": 14452
+  },
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/p/pexpect/python3-pexpect_4.9-3_all.deb",
+    "name": "python3-pexpect_4.9-3_all.deb",
+    "hash": "sha256-56ipaLZx1ZFW7kejcT/eWOCrZF5ihbtQ87ClMrhkPxU=",
+    "package": "python3-pexpect",
+    "version": "4.9-3",
+    "size": 55568
+  },
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/p/python-tomli/python3-tomli_2.2.1-2%2bb1_amd64.deb",
+    "name": "python3-tomli_2.2.1-2+b1_amd64.deb",
+    "hash": "sha256-V9XuKSNLoUXimKNuRTD/Jhvy5wbp35XQjP7uHX6DYqk=",
+    "package": "python3-tomli",
+    "version": "2.2.1-2+b1",
+    "size": 121888
+  },
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/s/shellingham/python3-shellingham_1.5.4-1_all.deb",
+    "name": "python3-shellingham_1.5.4-1_all.deb",
+    "hash": "sha256-2AYffABF5K5WK1YwBLeEHqpPuC7hAp8gibcsasc36M8=",
+    "package": "python3-shellingham",
+    "version": "1.5.4-1",
+    "size": 11048
+  },
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/t/typer/python3-typer_0.15.2-1_all.deb",
+    "name": "python3-typer_0.15.2-1_all.deb",
+    "hash": "sha256-/h2uJ+/6AjoWVuzQv6r7Z3d7tpLKiXDVbWCa2VD9fuQ=",
+    "package": "python3-typer",
+    "version": "0.15.2-1",
+    "size": 37864
+  },
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/n/nala/nala_0.16.0_all.deb",
+    "name": "nala_0.16.0_all.deb",
+    "hash": "sha256-GcvFsSvbjykBqPJRHqJDKiray3/fPnIPDd0D6FtsLUs=",
+    "package": "nala",
+    "version": "0.16.0",
+    "size": 145328
+  },
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/s/sgml-base/sgml-base_1.31%2bnmu1_all.deb",
+    "name": "sgml-base_1.31+nmu1_all.deb",
+    "hash": "sha256-o1W4Mtnw9NyeyhpmEIDbXcEY5sQ18QelxN0gHXr1m6g=",
+    "package": "sgml-base",
+    "version": "1.31+nmu1",
+    "size": 10868
+  },
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/x/xml-core/xml-core_0.19_all.deb",
+    "name": "xml-core_0.19_all.deb",
+    "hash": "sha256-B57F4QscSaojpsU66OVeM67BIdHIehMdIXK9q8P0Aw4=",
+    "package": "xml-core",
+    "version": "0.19",
+    "size": 20088
+  },
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/p/policykit-1/polkitd_126-2_amd64.deb",
+    "name": "polkitd_126-2_amd64.deb",
+    "hash": "sha256-1alIJ1m09zeesNg/evtJsxUWWtz9OOuwBRK7J7fMXXQ=",
+    "package": "polkitd",
+    "version": "126-2",
+    "size": 122468
+  },
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/p/policykit-1/pkexec_126-2_amd64.deb",
+    "name": "pkexec_126-2_amd64.deb",
+    "hash": "sha256-BOe5WV2Olqxr1ks/kszgD9065VRrOt+G0wsbOxuAExQ=",
+    "package": "pkexec",
+    "version": "126-2",
+    "size": 24908
+  },
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/s/synaptic/synaptic_0.91.7_amd64.deb",
+    "name": "synaptic_0.91.7_amd64.deb",
+    "hash": "sha256-D9pK3hvjDvlb8+ni4KbpGhziIECHYaiShytF5iTCE74=",
+    "package": "synaptic",
+    "version": "0.91.7",
+    "size": 2120904
+  },
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/x/x11-xkb-utils/x11-xkb-utils_7.7%2b9_amd64.deb",
+    "name": "x11-xkb-utils_7.7+9_amd64.deb",
+    "hash": "sha256-dF4px5u0NdBXzb+LtZo1+jPoGOVmy3VGdPRNOBzNQxc=",
+    "package": "x11-xkb-utils",
+    "version": "7.7+9",
+    "size": 158552
+  },
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/x/xauth/xauth_1.1.2-1.1_amd64.deb",
+    "name": "xauth_1_1.1.2-1.1_amd64.deb",
+    "hash": "sha256-FGh7yOOvNQc49h5ahyvN2DclaUywnUSNdQd6vWJJZ5o=",
+    "package": "xauth",
+    "version": "1:1.1.2-1.1",
+    "size": 35856
+  },
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/x/xorg-server/xserver-common_21.1.16-1.3%2bdeb13u3_all.deb",
+    "name": "xserver-common_2_21.1.16-1.3+deb13u3_all.deb",
+    "hash": "sha256-3B03MDwQOyPEDNHqaUxcZWHg6NwXNKc8egrg7wgOf8w=",
+    "package": "xserver-common",
+    "version": "2:21.1.16-1.3+deb13u3",
+    "size": 2410088
+  },
+  {
+    "url": "https://snapshot.debian.org/archive/debian/20261102T000000Z/pool/main/x/xorg-server/xvfb_21.1.16-1.3%2bdeb13u3_amd64.deb",
+    "name": "xvfb_2_21.1.16-1.3+deb13u3_amd64.deb",
+    "hash": "sha256-Nl2itskzOfNDN8Q0qUibtkEaJA+ke59JaT0wkXRfKMI=",
+    "package": "xvfb",
+    "version": "2:21.1.16-1.3+deb13u3",
+    "size": 3198040
+  }
+]

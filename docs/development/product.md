@@ -6,4 +6,4 @@ GC-rooted application profile. The Nix runtime provider is consumer-configurable
 
 See the [README](../../README.md) for the supported API and operational contract,
 and [design](../design.md) for the package-manager boundaries and deferred
-installer, hardware and backend work. Intended organization: `nix-impurifiers`.
+installer, hardware and backend work. Published under `nix-impurifiers`.

@@ -107,7 +107,17 @@ let
           configure|triggered) /usr/sbin/nix-profile-engine reconcile ;;
         esac
         SCRIPT
-        chmod 755 root/DEBIAN/postinst
+        cat > root/DEBIAN/prerm <<'SCRIPT'
+        #!/bin/sh
+        set -eu
+        # A solver may remove the runtime with its final dependent application.
+        # Reconcile and release retained generations before this engine vanishes.
+        if [ "$1" = remove ]; then
+          /usr/sbin/nix-profile-engine reconcile
+          /usr/sbin/nix-profile-engine prune --keep 0
+        fi
+        SCRIPT
+        chmod 755 root/DEBIAN/postinst root/DEBIAN/prerm
         echo "Installed-Size: $(du --apparent-size -sk root | cut -f1)" >> root/DEBIAN/control
         dpkg-deb --root-owner-group --build root "$out"
       '';

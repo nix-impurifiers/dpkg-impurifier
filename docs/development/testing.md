@@ -41,8 +41,9 @@ nix build '.#checks.x86_64-linux.vm-debian' -L --no-link
 The three cached-check workflows follow the workspace pipeline, copied from
 ch-zsh-config at `138f31451af4896f3a6259af397db990fb2fb9a7` with VM-specific
 prose/timeouts and cache uploads disabled. They require no cache upload secrets.
-They run the flake checks, including both QEMU suites. Local validation does not
-claim a GitHub Actions run: the new repository has not been published yet.
+They run all flake checks, including the systemd, Debian userspace, SDK producer
+and six frontend QEMU suites. Concurrent Nix builds are limited to two. The public repository runs these checks on GitHub Actions. Each new revision
+still requires local native checks and its own CI evidence.
 
 The engine/payload/cache implementation is now in the pinned `impurifier` source
 input. Changing that dependency is gated by both VM suites, including the
@@ -50,3 +51,9 @@ service-restart recovery regression. The backend preserves its original state
 and cache namespace when invoking the shared engine.
 
 Lifecycle migrations and native host-library upgrades are checked in backend VMs. Hardware fixtures use a real ELF loader and versioned native driver packages; dpkg additionally checks service restart, immutable old generations, missing-library failure and snapshot GC roots. Real GPU compatibility requires separate device testing.
+
+The frontend suites and SDK provenance are documented in
+[debian-frontends.md](debian-frontends.md). Aptitude's automatic runtime removal
+is a regression gate: the runtime prerm must clear projected intent and release
+retained roots while its engine and dependencies still exist. Every frontend
+also exercises an explicit runtime purge when its solver retains the runtime.
