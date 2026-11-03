@@ -25,6 +25,7 @@
         default = impurifier.engine;
         engine = impurifier.engine;
         runtime-deb = impurifier.runtimeDeb;
+        hello-native-debs = impurifier.makeNativeDebs { pkg = pkgs.hello; };
         hello-net-deb = impurifier.makeNetDeb { pkg = pkgs.hello; };
         hello-offline-deb = impurifier.makeOfflineDeb { pkg = pkgs.hello; };
       };

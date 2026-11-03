@@ -23,6 +23,70 @@ let
       "arm64"
     else
       throw "dpkg-impurifier: unsupported target architecture";
+  # Returns a collection: install the application and its store-object DEBs
+  # together, or publish them in an ordinary APT repository.
+  makeNativeDebs =
+    {
+      pkg,
+      name ? pkg.pname,
+      version ? pkg.version,
+      programs ? [ (pkg.meta.mainProgram or (pkg.pname)) ],
+    }:
+    assert lib.assertMsg (
+      builtins.match "[a-z0-9][a-z0-9+.-]+" name != null
+    ) "invalid Debian package name";
+    assert lib.assertMsg (
+      builtins.match "[0-9][A-Za-z0-9.+:~_-]*" version != null
+    ) "invalid Debian version";
+    assert lib.assertMsg (
+      programs != [ ]
+      && lib.all (p: builtins.match "[A-Za-z0-9_+.-]+" p != null && p != "." && p != "..") programs
+    ) "invalid command names";
+    let
+      closure = pkgs.closureInfo { rootPaths = [ pkg ]; };
+      spec = pkgs.writeText "native-debs.json" (
+        builtins.toJSON {
+          inherit
+            name
+            version
+            programs
+            architecture
+            ;
+          installable = toString pkg;
+        }
+      );
+    in
+    pkgs.runCommand "${name}-${version}-native-debs"
+      {
+        nativeBuildInputs = [
+          pkgs.python3
+          pkgs.dpkg
+        ];
+      }
+      ''
+        python3 ${./native-debs.py} ${closure}/registration ${spec} "$out"
+      '';
+  makeNativeRepository =
+    { collections }:
+    pkgs.runCommand "native-closure-deb-repository"
+      {
+        nativeBuildInputs = [ pkgs.dpkg ];
+      }
+      ''
+        mkdir -p "$out"
+        for collection in ${lib.escapeShellArgs (map toString collections)}; do
+          for package in "$collection"/*.deb; do
+            destination="$out/$(basename "$package")"
+            if test -e "$destination"; then
+              cmp "$package" "$destination"
+            else
+              cp "$package" "$destination"
+            fi
+          done
+        done
+        cd "$out"
+        dpkg-scanpackages . /dev/null > Packages
+      '';
   makeDeb =
     args@{
       pkg,
@@ -75,23 +139,26 @@ let
       '';
   makeRuntimeDeb =
     {
-      nixDependency ? "nix-bin | nix-external-runtime",
+      bundledNixStore ? null,
+      bundledNixNotices ? [ ],
+      nixDependency ? (if bundledNixStore == null then "nix-bin | nix-external-runtime" else null),
     }:
     assert lib.assertMsg (
-      builtins.match "[A-Za-z0-9 .,+|():<>=~-]+" nixDependency != null
+      (nixDependency == null && bundledNixStore != null)
+      || (nixDependency != null && builtins.match "[A-Za-z0-9 .,+|():<>=~-]+" nixDependency != null)
     ) "invalid native Nix dependency expression";
     pkgs.runCommand "dpkg-impurifier-${core.runtimeVersion}.deb" { nativeBuildInputs = [ pkgs.dpkg ]; }
       ''
         mkdir -p root/DEBIAN
-        cp -r ${core.makeRuntimeTree { }}/. root/
+        cp -r ${core.makeRuntimeTree { inherit bundledNixStore bundledNixNotices; }}/. root/
         chmod -R u+w root
         cat > root/DEBIAN/control <<'CONTROL'
         Package: dpkg-impurifier
         Version: ${core.runtimeVersion}
-        Architecture: all
+        Architecture: ${if bundledNixStore == null then "all" else architecture}
         Maintainer: dpkg Impurifier <root@localhost>
         Description: Native package intent projected into a Nix profile
-        Depends: python3, ${nixDependency}
+        Depends: python3${lib.optionalString (nixDependency != null) (", " + nixDependency)}
         CONTROL
         cat > root/DEBIAN/triggers <<'TRIGGERS'
         interest /usr/share/nix-profile.d
@@ -129,7 +196,12 @@ in
     unit
     runtimeVersion
     ;
-  inherit makeDeb makeRuntimeDeb;
+  inherit
+    makeDeb
+    makeRuntimeDeb
+    makeNativeDebs
+    makeNativeRepository
+    ;
   runtimeDeb = makeRuntimeDeb { };
   makePackage = args: {
     net = makeDeb (args // { offline = false; });

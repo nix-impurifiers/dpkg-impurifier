@@ -57,3 +57,15 @@ The frontend suites and SDK provenance are documented in
 is a regression gate: the runtime prerm must clear projected intent and release
 retained roots while its engine and dependencies still exist. Every frontend
 also exercises an explicit runtime purge when its solver retains the runtime.
+
+`vm-native` installs native-owned closure DEBs into an isolated official Debian
+13 userspace inside QEMU, without binding the surrounding VM's store or supplying
+Nix. It checks execution, two applications sharing dependencies, upgrade,
+automatic dependency retention/removal, native checksums, and absence of Nix's
+executable/database/socket. This is a userspace installation test, not a complete
+Debian boot.
+
+`vm-bundled` installs a static Nix executable into an isolated Debian userspace with its own Debian Python runtime. It checks local-store import and
+execution without a daemon, preference for an external client, bundled fallback,
+and package removal. `tests/static-nix.nix` fixes a missing syscall header in the
+pinned static Nix fixture without changing the ecosystem's nixpkgs pin.

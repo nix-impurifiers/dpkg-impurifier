@@ -181,3 +181,48 @@ Final removal of the runtime reconciles and prunes before its executable and
 native Nix/Python dependencies disappear. This also covers solvers which remove
 the runtime automatically with the last application. Ordinary runtime upgrades
 retain the normal generation policy.
+
+## Native-owned closures without target-side Nix
+
+```nix
+backend.makeNativeDebs {
+  pkg = myApplication;
+  # name/version default to the derivation's pname/version.
+  programs = [ "my-application" ];
+}
+```
+
+This returns a directory of ordinary DEBs: one application package owning its
+`/usr/bin` command links, and one dependency package for each runtime store
+object. Reference edges become exact native dependencies. Shared store objects
+have identical package identities across applications; application upgrades
+select their own immutable outputs. Files retain their original store paths.
+No Nix executable, daemon, SQLite database, realization hook, or shared profile
+is needed in the installed environment.
+
+`makeNativeRepository { collections = [ collectionA collectionB ]; }` merges
+collections, checks duplicate package bytes, and emits an APT `Packages` index.
+It is an unsigned staging repository; publication/signing policy remains with
+the caller. Installing named applications from a repository lets APT establish
+automatic dependency ownership normally.
+
+Install a collection together with APT, or publish its DEBs in an ordinary
+repository. Direct local-file installation marks explicitly supplied packages
+manual; use native automatic dependency marks for store-object packages if you
+want autoremove, or let repository dependency resolution install them. Normal
+native policy governs application removal and retained dependencies. This API
+currently exports commands; it does not imply the existing shared-profile
+service/account/lifecycle API works for native-owned closures.
+
+The target store paths are owned by dpkg. Do not register the same paths into a
+Nix-managed store: subsequent Nix GC could remove native-owned files. An external
+Nix installation can exist, but mixed ownership of these paths is not supported.
+Optional Nix-assisted operations on native payloads remain separate work.
+
+For the existing profile-managed package mode, `makeRuntimeDeb` accepts
+`bundledNixStore` and `bundledNixNotices`. The binary must be static and compatible
+with the target architecture. With a bundle, the default dependency is Python
+only; a compatible external Nix client is preferred when available. An explicit
+`nixDependency` still adds a native provider dependency. The static binary's
+upstream license obligations remain with its distributor. This client can use a
+local Nix database without a daemon; it is not the deferred daemon installer.

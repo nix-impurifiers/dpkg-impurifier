@@ -8,6 +8,8 @@ let
   producer = import ./debian-frontend-producer.nix { inherit pkgs; };
 in
 {
+  vm-bundled = import ./bundled-vm.nix { inherit pkgs impurifier; };
+  vm-native = import ./native-vm.nix { inherit pkgs impurifier; };
   unit = impurifier.unit;
   frontend-sdk = producer;
   emitter = import ./emitter.nix { inherit pkgs impurifier; };
