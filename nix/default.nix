@@ -26,37 +26,11 @@ let
   # Returns a collection: install the application and its store-object DEBs
   # together, or publish them in an ordinary APT repository.
   makeNativeDebs =
-    {
-      pkg,
-      name ? pkg.pname,
-      version ? pkg.version,
-      programs ? [ (pkg.meta.mainProgram or (pkg.pname)) ],
-    }:
-    assert lib.assertMsg (
-      builtins.match "[a-z0-9][a-z0-9+.-]+" name != null
-    ) "invalid Debian package name";
-    assert lib.assertMsg (
-      builtins.match "[0-9][A-Za-z0-9.+:~_-]*" version != null
-    ) "invalid Debian version";
-    assert lib.assertMsg (
-      programs != [ ]
-      && lib.all (p: builtins.match "[A-Za-z0-9_+.-]+" p != null && p != "." && p != "..") programs
-    ) "invalid command names";
+    args:
     let
-      closure = pkgs.closureInfo { rootPaths = [ pkg ]; };
-      spec = pkgs.writeText "native-debs.json" (
-        builtins.toJSON {
-          inherit
-            name
-            version
-            programs
-            architecture
-            ;
-          installable = toString pkg;
-        }
-      );
+      trees = core.makeNativeTrees args;
     in
-    pkgs.runCommand "${name}-${version}-native-debs"
+    pkgs.runCommand "native-owned-deb-collection"
       {
         nativeBuildInputs = [
           pkgs.python3
@@ -64,7 +38,7 @@ let
         ];
       }
       ''
-        python3 ${./native-debs.py} ${closure}/registration ${spec} "$out"
+        python3 ${./native-debs.py} ${trees} "$out" ${architecture}
       '';
   makeNativeRepository =
     { collections }:
